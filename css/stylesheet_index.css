@@ -11,4 +11,29 @@ body {
   font-family: sans-serif;
   line-height: 2;
   color: #555;
+  max-width: 1280px;
+  padding: 0.32px;
+  margin: 0 atuo;
+}
+
+/**************************/
+/* GENRAL                 */
+/**************************/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  position: relative;
+}
+
+/**************************/
+/* NAVIGATION *************/
+/**************************/
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
 }
