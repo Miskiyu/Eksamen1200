@@ -15,25 +15,108 @@ body {
   padding: 0.32px;
   margin: 0 atuo;
 }
+h1 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 
+/****** HEADER *************/
 /**************************/
-/* GENRAL                 */
-/**************************/
-.header {
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fdf2e9;
   position: relative;
+  height: 7rem;
+  font-size: 1.2rem;
+  padding: 0 2.8rem;
 }
 
-/**************************/
-/* NAVIGATION *************/
-/**************************/
+.logo {
+  height: 3.9rem;
+}
 
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   list-style: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #087f5b;
+}
+
+/**************************/
+/**********SEKSJON***********/
+/**************************/
+
+.seksjon-introduksjon {
+  padding: 4.7rem 0 9.6rem 0;
+  background-color: #fdf2e9;
+}
+
+.introduksjon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 64px;
+}
+
+.introduksjon-tekst-boks {
+  align-self: center;
+}
+
+.introduksjon-beskrivelse {
+  font-size: 28px;
+  line-height: 1.7;
+}
+
+/**************************/
+/******TRE_TING LÆRT********/
+/**************************/
+.tre-ting-kolonne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  margin-bottom: 50px;
+}
+.kolonne-overskrift {
+  justify-content: center;
+}
+.kolonne-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.kolonne-tittel {
+  margin-bottom: 16px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.kolonne-tekst {
+  font-size: 18px;
+  line-height: 1.7;
 }
