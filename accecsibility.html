@@ -6,7 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <title>Accessibility</title>
-    <style></style>
+    <style>
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+   color: #087f5b;
+}
+      .section-øverst {
+        padding: 2.7rem 2rem 9.6rem 2rem;
+        background-color: #fdf2e9;
+        padding-left: 20px;
+  
+      }
+      .section-nederst{ 
+        margin-top: 1.5rem;
+        padding: 4.7rem 2rem 9.6rem 2rem;
+        background-color: #fdf2e9;
+  
+        
+      }
+      .tittel-p {
+        
+        padding-left: 90px;
+        padding-right: 400px;
+      }
+      
+  
+
+    </style>
   </head>
   <!-- It must contain a short presentation of accessibility
 (up to 500 words describing how the group tested the code for
@@ -60,36 +93,40 @@ are certain to read. (Grammar not important.)-->
     </header>
     <main>
       <h1>Tilgjenelighet</h1>
-      <p>
-        For at en side skal være universal desing så er det viktig å tenke på
-        disse tingene. ------- Når du har med dette så vil siden din være
-        tilgjengelig og da vil flere få brukt den.
-      </p>
+      <div class="tittel-p">
+        <p>
+          Tilgjengelighet er praksisen med å gjøre nettsidene dine brukbare av så
+          mange mennesker som mulig. <blockquote>Mozilla.site</blockquote>
+        </p>
+
+      </div>
 
       <section class="section-øverst">
         <div class="plassere-tekstboks">
           <h2 class="andre-overskrift">
-            Hva man burde tenke på mens lager side
+            Hvordan vi gjorde kodevalg for universell utforming
           </h2>
           <p class="section-tekst">
-            Når det kommer til tilgjengelighet så er det viktig å tenke
+            Vi gjorde flere kodevalg for å få siden vår til å bli mer
+            tilgjengeig for flere brukere. Et av valgene vi gjorde var at vi
+            skulle velge semantice tags så langt det gikk. For at folk som
+            bruker skjermleser skulle få bedre opplevese. Et annet valg vi
+            gjorde var at hvordan vi stylet siden vår. Font-style og font-size
+            skulle være lesebar for alle og vi valgte en
           </p>
         </div>
         <div class="plassere-bilde">
-          <img
-            class="section-overstebilde"
-            src="images/accesibility/acces.PNG"
-          />
+          <img class="section-overstebilde" src="images/accesibility/NSFrfc_2k.jpeg" />
         </div>
       </section>
 
       <section class="section-nederst">
         <div class="plassere-tekstboks">
-          <h2 class="andre-overskrift">Etter validation</h2>
-          <p class="section-tekst">Gjennom</p>
+          <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
+          <p class="section-tekst">Vi brukte ..... for å teste om koden vår var accecsibility</p>
         </div>
         <div class="plassere-bilde">
-          <img class="section-overstebilde" />
+          <img class="section-overstebilde" src="images/accesibility/NSFrfc_2k.jpeg" />
         </div>
       </section>
     </main>

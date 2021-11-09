@@ -26,6 +26,7 @@ h1 {
   line-height: 1.2;
   text-align: center;
 }
+
 /**************************/
 /****** HEADER *************/
 /**************************/
@@ -65,25 +66,24 @@ h1 {
 }
 
 .section-overstebilde {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .section-øverst {
+  max-width: auto;
+  display: flex;
+  background-color: red;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  /*Fikk til griden, men fik problemer med bildet. Den går ut av container box
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 90px;
   margin-top: 50px;
   justify-content: space-evenly;
-  background-color: red;
+  background-color: red;*/
 }
-
-/* Klarte å fikse grid så tok bort flex.
- her er flex koden: 
-  max-width: auto;
-  display: flex;
-  background-color: red;
-  flex-direction: row;
-  justify-content: space-evenly;*/
 
 .plassere-tekstboks {
   width: 500px;

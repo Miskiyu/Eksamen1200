@@ -27,8 +27,7 @@ h2 {
   letter-spacing: -0.5px;
 }
 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 /****** HEADER *************/
@@ -51,7 +50,7 @@ img {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 .nav-link:link,
@@ -84,6 +83,7 @@ img {
 
 .introduksjon-tekst-boks {
   align-self: center;
+  padding-left: 20px;
 }
 
 .introduksjon-beskrivelse {
