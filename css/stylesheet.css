@@ -53,16 +53,29 @@ h1 {
   list-style: none;
 }
 
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #087f5b;
+}
 /*************/
 /* øverste section*/
 /************/
 
 .andre-overskrift {
+  font-size: 25px;
 }
 
 .section-tekst {
   font-size: 14px;
-  line-height: 12px;
+  line-height: 18px;
+  text-align: justify;
 }
 
 .section-overstebilde {
@@ -72,7 +85,7 @@ h1 {
 .section-øverst {
   max-width: auto;
   display: flex;
-  background-color: red;
+  background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
 
@@ -99,7 +112,7 @@ h1 {
 .section-nederst {
   max-width: auto;
   display: flex;
-  background-color: blue;
+  background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
 }
