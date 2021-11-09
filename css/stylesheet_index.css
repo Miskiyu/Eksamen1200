@@ -13,7 +13,7 @@ body {
   color: #555;
   max-width: 1280px;
   padding: 0.32px;
-  margin: 0 atuo;
+  margin: 0 auto;
 }
 h1 {
   margin-bottom: 32px;
@@ -46,13 +46,22 @@ img {
 .logo {
   height: 3.9rem;
 }
-
+label {
+  margin: 0 30px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
 .nav-list {
   display: flex;
   align-items: center;
   gap: 1rem;
   list-style: none;
 }
+
 .nav-link:link,
 .nav-link:visited {
   display: inline-block;
@@ -66,24 +75,23 @@ img {
 }
 
 /**************************/
-/**********SEKSJON***********/
+/**********SEKSJON 1 og 2***********/
 /**************************/
 
 .seksjon-introduksjon {
-  padding: 4.7rem 0 9.6rem 0;
+  padding: 4rem 0 7rem 0;
   background-color: #fdf2e9;
 }
 
 .introduksjon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   margin-top: 64px;
 }
 
 .introduksjon-tekst-boks {
-  align-self: center;
-  padding-left: 20px;
 }
 
 .introduksjon-beskrivelse {
@@ -92,22 +100,26 @@ img {
 }
 
 /**************************/
-/******TRE_TING LÆRT********/
+/**SEKSJON: TRE TING LÆRT**/
 /**************************/
+.tre-ting {
+  background-color: #fef9f4;
+}
 .tre-ting-kolonne {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .kolonne-overskrift {
-  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
 }
 .kolonne-icon {
   stroke: #087f5b;
   width: 32px;
   height: 32px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .kolonne-tittel {
@@ -119,4 +131,75 @@ img {
 .kolonne-tekst {
   font-size: 18px;
   line-height: 1.7;
+}
+
+/*****TABLETS*****/
+
+@media (max-width: 950px) {
+  .introduksjon {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 4rem;
+  }
+  h1 {
+    font-size: 37px;
+  }
+
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  /**Satte naven til display none for å få det bort og satt flec direction til colum for
+for å ha dem som kolonne og ikke rader **/
+  nav {
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+  /*Når du trykker på togglen så skal naven komme ned*/
+  #toggle:checked + nav {
+    display: block;
+  }
+
+  /*gjorde tre ting seksjonnene til 1 rad og 1 kolonne*/
+  .tre-ting-kolonne {
+    grid-template-columns: 1fr;
+    padding: 0 9rem;
+    gap: 2rem;
+  }
+  .kolonne-overskrift {
+    font-size: 30px;
+    justify-content: center;
+  }
+}
+
+/**************************/
+/******MEDIA MOBIL SCREEN**/
+/**************************/
+
+@media (max-width: 576px) {
+  .seksjon-introduksjon .tre-ting {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .introduksjon {
+    margin: 10px 0;
+    padding: 0 3.2rem;
+  }
+
+  .introduksjon-bildet {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
 }

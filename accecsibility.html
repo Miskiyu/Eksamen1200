@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="css/stylesheet.css" />
     <title>Accessibility</title>
     <style>
+      /***NAVEN**/
       .nav-link:link,
       .nav-link:visited {
         display: inline-block;
         text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-.nav-link:hover,
-.nav-link:active {
-   color: #087f5b;
-}
+        color: #333;
+        font-weight: 500;
+      }
+      .nav-link:hover, .nav-link:active {
+         color: #087f5b;
+        }
+        .section-tittel{
+          padding: 4rem 0 7rem 0;
+          text-align: center;
+          background-color: #fdf2e9;
+        }
       .section-øverst {
-        padding: 2.7rem 2rem 9.6rem 2rem;
+        padding: 2.7rem 0 9.6rem 0;
         background-color: #fdf2e9;
         padding-left: 20px;
   
@@ -31,10 +36,13 @@
   
         
       }
-      .tittel-p {
-        
-        padding-left: 90px;
-        padding-right: 400px;
+      .tittel-p {   
+        text-align: center;
+      }
+      .section-tekst {
+        font-size: 18px;
+        line-height: 1.7;
+        justify-content:start ;
       }
       
   
@@ -92,9 +100,10 @@ are certain to read. (Grammar not important.)-->
       </nav>
     </header>
     <main>
-      <h1>Tilgjenelighet</h1>
-      <div class="tittel-p">
-        <p>
+    
+      <div class="seksjon-tittel">
+         <h1>Tilgjenelighet</h1>
+        <p class="tittel-p">
           Tilgjengelighet er praksisen med å gjøre nettsidene dine brukbare av så
           mange mennesker som mulig. <blockquote>Mozilla.site</blockquote>
         </p>
@@ -107,6 +116,19 @@ are certain to read. (Grammar not important.)-->
             Hvordan vi gjorde kodevalg for universell utforming
           </h2>
           <p class="section-tekst">
+            
+            For at brukere skal kunne endre presentasjonen av innhold, er det nødvendig at: 
+            Godt organisert innhold hjelper brukere til å orientere seg og å navigere effektivt.
+            Slikt innhold inkluderer: Sidene har klare titler og er organisert ved hjelp av
+            beskrivende seksjonsoverskrifter. Det er mer enn én måte å finne relevante sider
+            innenfor et sett med nettsider. Brukere blir informert om deres nåværende plassering
+            innenfor et sett med relaterte sider. Det finnes måter å omgå blokker med innhold som gjentas på 
+            flere sider. Tastaturets fokus er synlig, og fokusrekkefølgen følger en meningsfull sekvens. 
+            Hensikten med en lenke er åpenbar, ideelt sett selv når koblingen vises på egen hånd. Overskrifter,
+            lister, tabeller, inndatafelt og innholdsstrukturer er riktig merket.
+            Sekvenser av informasjon eller instruksjoner er uavhengig av enhver presentasjon.. 
+
+
             Vi gjorde flere kodevalg for å få siden vår til å bli mer
             tilgjengeig for flere brukere. Et av valgene vi gjorde var at vi
             skulle velge semantice tags så langt det gikk. For at folk som
@@ -123,7 +145,12 @@ are certain to read. (Grammar not important.)-->
       <section class="section-nederst">
         <div class="plassere-tekstboks">
           <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
-          <p class="section-tekst">Vi brukte ..... for å teste om koden vår var accecsibility</p>
+          <p class="section-tekst">Vi brukte ..... for å teste om koden vår var accecsibility
+            Bilder  inkludere tilsvarende alternativ tekst (alt tekst) i markeringen/koden. Hvis alternativ tekst ikke er oppgitt for bilder, er bildeinformasjonen utilgjengelig, for eksempel for personer som ikke kan se og bruke en skjermleser som leser høyt informasjonen på en side, inkludert alternativteksten for det visuelle bildet. Når tilsvarende alt-tekst er gitt, er informasjonen tilgjengelig for personer som er blinde, samt for personer som slår av bilder (for eksempel i områder med dyr eller lav båndbredde). Den er også tilgjengelig for teknologier som ikke kan se bilder, for eksempel søkemotorer. Noen mennesker kan ikke bruke en mus, inkludert mange eldre brukere med begrenset finmotorisk kontroll. Et tilgjengelig nettsted er ikke avhengig av musen; den gjør all funksjonalitet tilgjengelig fra et tastatur. Da kan funksjonshemmede bruke hjelpeteknologier som etterligner tastaturet, for eksempel taleinndata. Akkurat som bilder ikke er tilgjengelige for folk som ikke kan se, er ikke lydfiler tilgjengelige for folk som ikke kan høre. Å gi en tekstutskrift gjør lydinformasjonen tilgjengelig for personer som er døve eller tunghørte, så vel som for søkemotorer og annen teknologi som ikke kan høre. Det er enkelt og relativt billig for nettsteder å gi transkripsjoner. Det finnes også transkripsjonstjenester som lager tekstutskrifter i HTML-format.
+
+
+
+          </p>
         </div>
         <div class="plassere-bilde">
           <img class="section-overstebilde" src="images/accesibility/NSFrfc_2k.jpeg" />
