@@ -86,12 +86,12 @@ label {
 .introduksjon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   margin-top: 64px;
 }
 
 .introduksjon-tekst-boks {
+  font-size: 20px;
 }
 
 .introduksjon-beskrivelse {
