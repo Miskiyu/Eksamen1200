@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*************/
@@ -12,7 +13,6 @@
 /************/
 
 body {
-  font-family: sans-serif;
   line-height: 2;
   color: #555;
   max-width: 1280px;
@@ -21,10 +21,21 @@ body {
 main {
 }
 
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.border-header-h1 {
+  border-style: solid;
+}
+
 h1 {
   font-size: 3rem;
   line-height: 1.2;
   text-align: center;
+  padding-bottom: 25px;
+  background-color: #fdf2e9;
 }
 
 /**************************/
@@ -45,11 +56,19 @@ h1 {
 .logo {
   height: 3.9rem;
 }
-
+label {
+  margin: 0 30px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -64,6 +83,7 @@ h1 {
 .nav-link:active {
   color: #087f5b;
 }
+
 /*************/
 /* øverste section*/
 /************/
@@ -71,17 +91,19 @@ h1 {
 .andre-overskrift {
   font-size: 25px;
   line-height: 27px;
- /* padding: 6px; eller burde det heller være margin? */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .section-tekst {
-  text-align: justify;
   font-size: 18px;
   line-height: 1.7;
-  justify-content: start;
-  /*  padding:6px;  eller burde det være margin?*/
-  /** Her må vi gjøre noe med display:inline eller noe for å få 
-  til at teksten ikke må ta hele plassen, for det ødelegger funksjonen til <q> taggen min */
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .section-overstebilde {
@@ -94,15 +116,9 @@ h1 {
   background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
-
-
-  /*Fikk til griden, men fik problemer med bildet. Den går ut av container box
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 90px;
-  margin-top: 50px;
-  justify-content: space-evenly;
-  background-color: red;*/
+  margin-top: 15px;
+  border-style: solid;
+  align-items: center;
 }
 
 .plassere-tekstboks {
@@ -116,11 +132,63 @@ h1 {
 /*************/
 /* Nedersete section*/
 /************/
+
 .section-nederst {
+  padding: 4.7rem 0 9.6rem 0;
   max-width: auto;
   display: flex;
   background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 1.5rem;
+  align-items: center;
+  margin-top: 15px;
+  border-style: solid;
+}
+
+/*****TABLETS*****/
+@media (max-width: 950px) {
+  .section-øverst {
+    flex-direction: column;
+  }
+  .section-nederst {
+    flex-direction: column;
+  }
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  /**Satte naven til display none for å få det bort og satt flex direction til colum for
+for å ha dem som kolonne og ikke rader **/
+  nav {
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+  /*Når du trykker på togglen så skal naven komme ned*/
+  #toggle:checked + nav {
+    display: block;
+  }
+}
+
+/**************************/
+/******MEDIA MOBIL SCREEN**/
+/**************************/
+
+@media (max-width: 576px) {
+  .plassere-tekstboks {
+    width: 300px;
+  }
+  h1 {
+    padding-top: 6px;
+    font-size: 2rem;
+  }
 }
