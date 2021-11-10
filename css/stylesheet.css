@@ -70,12 +70,18 @@ h1 {
 
 .andre-overskrift {
   font-size: 25px;
+  line-height: 27px;
+ /* padding: 6px; eller burde det heller være margin? */
 }
 
 .section-tekst {
-  font-size: 14px;
-  line-height: 18px;
   text-align: justify;
+  font-size: 18px;
+  line-height: 1.7;
+  justify-content: start;
+  /*  padding:6px;  eller burde det være margin?*/
+  /** Her må vi gjøre noe med display:inline eller noe for å få 
+  til at teksten ikke må ta hele plassen, for det ødelegger funksjonen til <q> taggen min */
 }
 
 .section-overstebilde {
@@ -88,6 +94,7 @@ h1 {
   background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
+
 
   /*Fikk til griden, men fik problemer med bildet. Den går ut av container box
   display: grid;
@@ -115,4 +122,5 @@ h1 {
   background-color: #fdf2e9;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 1.5rem;
 }
