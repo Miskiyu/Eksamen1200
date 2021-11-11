@@ -1,49 +1,224 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
-  font-family: sans-serif;
-  line-height: 2;
-  color: #555;
-  background-color: white;
+  max-width: 1280px;
 }
 
-h1 {
+/****** HEADER *************/
+/**************************/
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0dfd2;
+  position: relative;
+  height: 6rem;
+  font-size: 1.2rem;
+  padding: 0 2.8rem;
+  z-index: 1;
 }
 
-main {
+.logo {
+  height: 3.9rem;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #087f5b;
+}
+label {
+  margin: 0 30px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
+
+/*****Første del av siden******/
+.første-del {
+  width: 100%;
+  min-height: 82vh;
+  padding: 100px;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.førstedel-text {
+  position: relative;
+}
+.førstedel-text h2 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.førstedel-text h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.førstedel-text p {
+  font-size: 1em;
+  color: #ffffff;
+  max-width: 700px;
+  line-height: 1.5;
+}
+.informasjon {
+  padding: 10px 20px 15px 40px;
+  margin-bottom: 25px;
+  background-color: #fefbf8;
+}
+.informasjon-liste {
+  margin-bottom: 25px;
+}
+
+li {
+  padding-left: 20px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.område {
+  position: relative;
+}
+
+.info-hvordan {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
+.info-overskrift {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+.hvordan-overskrift {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hvordan-tekst {
   font-size: 17px;
+  line-height: 1.7;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 4rem 7rem 4rem;
+  background-color: #fefbf8;
+}
+/*høyde: 100vh betyr innstilt 100 prosent av 
+visningshøyden i forhold til enhetens høyde. som er de tre 6 bildene vi har*/
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  height: 50vh;
+}
+.gallery-text {
+  text-align: center;
+  font-size: 30px;
+  background-color: #fefbf8;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+@media (max-width: 950px) {
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  /**Satte naven til display none for å få det bort og satt flex direction til colum for
+for å ha dem som kolonne og ikke rader **/
+  nav {
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+  /*Når du trykker på togglen så skal naven komme ned*/
+  #toggle:checked + nav {
+    display: block;
+  }
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: black;
-  color: white;
+/**************************/
+/******MEDIA MOBIL SCREEN**/
+/**************************/
+
+@media (max-width: 576px) {
+  .nav-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+  .første-del {
+    width: 100%;
+    min-height: 86vh;
+    padding: 100px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    gap: 200px;
+
+    object-fit: cover;
+  }
+  .førstedel-text h2 {
+    font-size: 2em;
+  }
+  .førstedel-text p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .informasjon-liste {
+    margin: 25px 0 2px;
+  }
+  .info-overskrift {
+    margin-top: 20px;
+  }
 }
-/*********************************/
-/* Generelle brukbare komponenter*/
-/*********************************/

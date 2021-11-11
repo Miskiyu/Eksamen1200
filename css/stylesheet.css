@@ -87,7 +87,13 @@ label {
 /*************/
 /* øverste section*/
 /************/
-
+/**Dette er bare access siden som har */
+.seksjon-tittel {
+  background-color: #fdf2e9;
+  position: relative;
+  padding-left: 20px;
+  text-align: center;
+}
 .andre-overskrift {
   font-size: 25px;
   line-height: 27px;
@@ -176,6 +182,14 @@ for å ha dem som kolonne og ikke rader **/
   /*Når du trykker på togglen så skal naven komme ned*/
   #toggle:checked + nav {
     display: block;
+  }
+  #plassere-bilde-a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #plassere-bilde-a img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
