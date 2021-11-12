@@ -106,14 +106,19 @@ video {
 }
 
 li {
-  padding-left: 20px;
   display: flex;
-  gap: 50px;
+  justify-content: space-evenly;
+}
+.tekst {
+}
+.tag-text {
+  justify-content: right;
 }
 
 .info-hvordan {
   display: grid;
   grid-template-columns: 1fr;
+
   margin-top: 10px;
   padding-top: 15px;
   margin-bottom: 40px;
