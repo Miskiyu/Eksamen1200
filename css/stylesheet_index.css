@@ -152,7 +152,7 @@ img {
 
 /*****TABLETS*****/
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .introduksjon {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -201,7 +201,7 @@ for å ha dem som kolonne og ikke rader **/
 
 /******MEDIA MOBIL SCREEN**/
 
-@media only screen and (min-width: 300px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .seksjon-introduksjon .tre-ting {
     padding: 2.4rem 0 6.4rem 0;
   }
@@ -216,6 +216,30 @@ for å ha dem som kolonne og ikke rader **/
 
   .logos img {
     height: 1.2rem;
+  }
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  /**Satte naven til display none for å få det bort og satt flex direction til colum for
+for å ha dem som kolonne og ikke rader **/
+  nav {
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+  /*Når du trykker på togglen så skal naven komme ned*/
+  #toggle:checked + nav {
+    display: block;
   }
 
   .tre-ting-kolonne {

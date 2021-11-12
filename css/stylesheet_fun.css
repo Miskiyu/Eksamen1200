@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  max-width: 1280px;
+  max-width: 1380px;
   background-color: #d8ebe2;
 }
 
@@ -36,8 +36,8 @@ body {
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: black;
-  font-weight: 535;
+  color: rgb(8, 8, 8);
+  font-weight: 555;
 }
 .nav-link:hover,
 .nav-link:active {
@@ -52,12 +52,64 @@ label {
 #toggle {
   display: none;
 }
-/****************************/
-/*****Video og teksten******/
-/***************************/
-.første-del {
+
+/*************/
+/* Tekstrelatert:
+h1, h2, a, 
+klasse til h2 og p */
+/************/
+
+.video-text h2,
+.video-text h3,
+.video-text p {
+  color: #ffffff;
+  line-height: 1.5em;
+}
+
+.video-text h2 {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.video-text h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.video-text p {
+  font-size: 1em;
+}
+
+.info-overskrift,
+.informasjon-kart h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.info-underoverskrift {
+  font-size: 20px;
+  padding: 12px 10px;
+}
+
+.info-tekst {
+  font-size: 17px;
+  line-height: 1.5em;
+}
+.gallery-text {
+  text-align: center;
+  font-size: 30px;
+}
+
+/**************************/
+/**********Layout***********/
+/**************************/
+
+/*Video og teksten**/
+
+.videodel {
   width: 100%;
-  min-height: 82vh;
+  min-height: 80vh;
   padding: 100px;
 }
 video {
@@ -70,36 +122,12 @@ video {
   opacity: 0.8;
 }
 
-.førstedel-text {
+.video-text {
   position: relative;
 }
-.førstedel-text h2 {
-  font-size: 3em;
-  font-weight: 800;
-  color: #ffffff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.førstedel-text h3 {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.førstedel-text p {
-  font-size: 1em;
-  color: #ffffff;
+
+.video-text p {
   max-width: 700px;
-  line-height: 1.5;
-}
-
-/******************/
-/***Informasjon***/
-/****************/
-
-.informasjon,
-.informasjon-kart,
-.section-gallery {
 }
 
 .informasjon {
@@ -109,48 +137,17 @@ video {
   grid-template-columns: 1fr;
 }
 
-.info-overskrift {
-  font-size: 30px;
-  text-align: center;
-  padding-top: 5px;
+.info-overskrift,
+.informasjon-kart h2 {
+  margin-bottom: 30px;
 }
 
 .info-underoverskrift {
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 12px 10px;
 }
-
-.info-tekst {
-  font-size: 17px;
-  line-height: 1.7em;
-}
-
-.informasjon-kart h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .kart-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-
-  padding-right: 45px;
+  padding: 0 100px 0 100px;
 }
-
-.kart-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-/**************************/
-/******Bildet sekvens******/
-/**************************/
 
 .gallery {
   display: grid;
@@ -164,16 +161,16 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
   object-fit: cover;
   height: 50vh;
 }
-.gallery-text {
-  text-align: center;
-  font-size: 30px;
+.section-gallery {
+  margin-top: 90px;
 }
-/******************************/
-/*******MEDIA TABLET SCREEN*****/
-/*****************************/
 
-@media (max-width: 950px) {
-  /**FOR NAVEM**/
+/**************************/
+/******MEDIA-QUERY*********/
+/**************************/
+
+/*******STOR TABLET SCREEN 950px*****/
+@media only screen and (max-width: 950px) {
   label {
     display: block;
     cursor: pointer;
@@ -186,7 +183,7 @@ for å ha dem som kolonne og ikke rader **/
     display: none;
     flex-direction: column;
   }
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+  /**alle linkene i nav-listen satt jeg til display block og lagde border for */
 
   .nav-list a {
     display: block;
@@ -197,13 +194,44 @@ for å ha dem som kolonne og ikke rader **/
   #toggle:checked + nav {
     display: block;
   }
+
+  video {
+    width: 100%;
+    height: 60%;
+  }
+  .videodel {
+    min-height: 55vh;
+    width: 100%;
+    padding: 80px;
+  }
 }
 
 /**************************/
 /******MEDIA MOBIL SCREEN**/
 /**************************/
+@media only screen and (min-width: 365px) and (max-width: 576px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
 
-@media (max-width: 576px) {
+  nav {
+    text-align: center;
+
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+
   .nav-list {
     flex-direction: column;
     flex-wrap: wrap;
@@ -213,33 +241,95 @@ for å ha dem som kolonne og ikke rader **/
   .logos img {
     height: 1.2rem;
   }
-  .første-del {
+  .videodel {
     width: 100%;
-    min-height: 86vh;
-    padding: 100px;
+    padding: 80px;
+  }
+
+  video {
+    width: 100%;
+    height: 90%;
+  }
+  .video-text h2 {
+    font-size: 2.2em;
   }
   .gallery {
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 50% 50%;
   }
   .gallery img {
     width: 100%;
     height: auto;
     gap: 200px;
-
     object-fit: cover;
   }
-  .førstedel-text h2 {
-    font-size: 2em;
+
+  .kart-responsive {
+    padding: 20px 20px;
   }
-  .førstedel-text p {
-    font-size: 0.9em;
-    font-weight: bold;
+}
+
+/*************************************/
+/******MEDIA MINDRE ENN MOBIL SCREEN**/
+/*************************************/
+@media only screen and (min-width: 234px) and (max-width: 365px) {
+  label {
+    display: block;
+    cursor: pointer;
   }
-  .informasjon-liste {
-    margin: 25px 0 2px;
+
+  nav {
+    text-align: center;
+
+    display: none;
+    flex-direction: column;
   }
-  .info-overskrift {
-    margin-top: 20px;
+
+  .nav-list a {
+    display: block;
+    border-bottom: 0.5px solid #eaeaeb;
+    margin: 0;
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+  .videodel {
+    width: 100%;
+    padding: 80px;
+  }
+  video {
+    width: 100%;
+    height: 90%;
+  }
+
+  .video-text h2 {
+    font-size: 1em;
+  }
+  .video-text h3 {
+    font-size: 20px;
+  }
+  .video-text p {
+    font-size: 12px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    gap: 200px;
+    object-fit: cover;
   }
 }
