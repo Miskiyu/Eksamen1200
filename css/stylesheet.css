@@ -12,6 +12,10 @@
 /* Body, main, H1*/
 /************/
 
+.border-header-h1 {
+  border-style: solid;
+}
+
 body {
   line-height: 2;
   color: #555;
@@ -19,15 +23,12 @@ body {
 }
 
 main {
+  /** Trenger kanskje ikke denne?*/ 
 }
 
 h1,
 h2 {
   font-family: "Times New Roman", Times, serif;
-}
-
-.border-header-h1 {
-  border-style: solid;
 }
 
 h1 {
@@ -151,6 +152,18 @@ a {
   border-style: solid;
 }
 
+footer{
+  border-style: solid;
+  background-color: #fdf2e9;
+  margin-top: 15px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /*****TABLETS*****/
 @media (max-width: 950px) {
   .section-øverst {
@@ -159,7 +172,7 @@ a {
   .section-nederst {
     flex-direction: column;
   }
-  /**FOR NAVEM**/
+  /**FOR NAVEN**/
   label {
     display: block;
     cursor: pointer;
@@ -198,7 +211,7 @@ for å ha dem som kolonne og ikke rader **/
 /**************************/
 
 @media (max-width: 576px) {
-  .plassere-tekstboks {
+  .plassere-tekstboks, .plassere-bilde {
     width: 300px;
   }
   h1 {

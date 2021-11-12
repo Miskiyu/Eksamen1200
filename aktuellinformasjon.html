@@ -9,16 +9,6 @@
   <title>Aktuell informasjon</title>
 </head>
 
-<!--
-   Technology and society (with external links):
-Write – or re-use a short text you have previously written – (anywhere
-from 300 to 1000 words) about technology and society. You are allowed
-to reuse text from "DATA1100 Technology and Society for Programmers"
-or other subjects. This text should have multiple links to external sites
-with relevant information. We shall not grade you on how relevant the
-information you link to is, but we expect several links and we expect it to 
-  -->
-
 <body>
   <!--    Nav start   -->
   <div class="border-header-h1">
@@ -50,11 +40,12 @@ information you link to is, but we expect several links and we expect it to
     </header>
 
     <!--    NAV slutt    -->
-
+    
+    <!--    Main Start    -->
     <main>
       <h1>Samspillet mellom teknologi og samfunn</h1>
   </div>
-<!--- Borderline slutt for NAV og H1-->
+  <!--- Borderline slutt for NAV og H1-->
 
   <section class="section-øverst">
     <div class="plassere-tekstboks">
@@ -109,12 +100,14 @@ information you link to is, but we expect several links and we expect it to
       </p>
     </div>
     <div class="plassere-bilde">
-      <img class="section-overstebilde" 
-          src="images/aktuellinformasjon/Internett_redigert_500w_lavkvalitet.jpg"
-          srcset="images/aktuellinformasjon/Internett_redigert_500w_lavkvalitet.jpg 500w,
+      <!--- Responsive bildeelement for å spare nettleseren for å laste inn store og mange bilder, 
+        nå laster den kun inn det bilde som passer til nettleserstørrelsen og skjermens resolution-->
+      <img class="section-overstebilde" src="images/aktuellinformasjon/Internett_redigert_500w_middelskvalitet.jpg"
+        srcset="images/aktuellinformasjon/Internett_redigert_300w_middelskvalitet.jpg 300w,
+                  images/aktuellinformasjon/Internett_redigert_500w_middelskvalitet.jpg 500w,
                   images/aktuellinformasjon/Internett_redigert_750w_middelskvalitet.jpg 750w,
-                  images/aktuellinformasjon/Internett_redigert_1000w_hoykvalitet.jpg 1000w"          
-          alt="Bilde av fiktive internettstråler eller signal" />
+                  images/aktuellinformasjon/Internett_redigert_1000w_middelskvalitet.jpg 1000w"
+        alt="Bilde av fiktive internettstråler eller signal" />
     </div>
   </section>
 
@@ -132,9 +125,7 @@ information you link to is, but we expect several links and we expect it to
         helhet skal ta mer ansvar for innovasjon og forskning er
         <abbr title="Responsible Research and
           Innovation"><i>RRI</i></abbr>.
-        <abbr title="Responsible Research and
-          Innovation">RRI</abbr>
-        er et korrigerende og forebyggende rammeverk slik at dagens forskere
+        RRI er et korrigerende og forebyggende rammeverk slik at dagens forskere
         og innovatører tar mer etiske, refleksive og ansvarlige valg som
         forbedrer framtiden. Dette innebærer at de ulike samfunnsaktørene
         har et samarbeid som gjennomsyrer hele arbeidsprosessen
@@ -173,15 +164,28 @@ information you link to is, but we expect several links and we expect it to
       </p>
     </div>
     <div class="plassere-bilde">
-      <img class="section-overstebilde" 
-            src="images/aktuellinformasjon/oppfinner_redigert_500w_lavkvalitet.jpg"
-          srcset="images/aktuellinformasjon/oppfinner_redigert_500w_lavkvalitet.jpg 500w,
+      <img class="section-overstebilde" src="images/aktuellinformasjon/oppfinner_redigert_500w_middelskvalitet.jpg"
+        srcset="images/aktuellinformasjon/oppfinner_redigert_300w_middelskvalitet.jpg 300w,
+                  images/aktuellinformasjon/oppfinner_redigert_500w_middelskvalitet.jpg 500w,
                   images/aktuellinformasjon/oppfinner_redigert_750w_middelskvalitet.jpg 750w,
-                  images/aktuellinformasjon/oppfinner_redigert_1000w_hoykvalitet.jpg 1000w"
-              alt="Mann som holder opp en lyspære"/>
+                  images/aktuellinformasjon/oppfinner_redigert_1000w_middelskvalitet.jpg 1000w"
+        alt="Mann som holder opp en lyspære" />
     </div>
   </section>
   </main>
-</body>
+<!--    Main Slutt   -->
 
+<!--    Footer Start    -->
+  <footer>
+    <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2> <!-- Eller må vi bruke H1 her?-->
+    <div class="footer-container">
+      <p class="section-tekst">Student 1</p>
+      <p class="section-tekst">Student 2</p>
+      <p class="section-tekst">Student 3</p>
+      <p class="section-tekst">Student 4</p>
+    </div>
+  </footer>
+<!--    Footer Slutt   -->
+
+</body>
 </html>
