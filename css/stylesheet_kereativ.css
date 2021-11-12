@@ -59,20 +59,22 @@ h1, h2, a,
 klasse til h2 og p */
 /************/
 
+.video-text h1,
 .video-text h2,
-.video-text h3,
 .video-text p {
-  color: #ffffff;
+  color: blue;
+  text-shadow: 5px 2px 30px rgb(240, 231, 231);
   line-height: 1.5em;
+  font-weight: 500;
 }
 
-.video-text h2 {
+.video-text h1 {
   font-size: 3em;
   font-weight: 800;
   line-height: 1em;
   text-transform: uppercase;
 }
-.video-text h3 {
+.video-text h2 {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
@@ -250,7 +252,7 @@ for å ha dem som kolonne og ikke rader **/
     width: 100%;
     height: 90%;
   }
-  .video-text h2 {
+  .video-text h1 {
     font-size: 2.2em;
   }
   .gallery {
@@ -313,10 +315,10 @@ for å ha dem som kolonne og ikke rader **/
     height: 90%;
   }
 
-  .video-text h2 {
+  .video-text h1 {
     font-size: 1em;
   }
-  .video-text h3 {
+  .video-text h2 {
     font-size: 20px;
   }
   .video-text p {
