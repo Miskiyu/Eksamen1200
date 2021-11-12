@@ -5,40 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <title>Accessibility</title>
-    <style>
-    
-     
-        .section-tittel{
-          padding: 4rem 0 7rem 0;
-          text-align: center;
-          background-color: #fdf2e9;
-        }
-   
-
-    </style>
+    <title>Tilgjengelighet</title>
   </head>
-  <!-- It must contain a short presentation of accessibility
-(up to 500 words describing how the group tested the code for
-accessibility using an automated test. Also explain how you checked,
-validated, and made coding-choices for universal design beyond what an
-automated test can do. You are welcome to use screenshots from the
-testing site and of your code. We shall read this text! While the content of
-your page is but a minor part of the assessment, this is the text that we
-are certain to read. (Grammar not important.)-->
-
-  <!---accesbiliby
-  - color blindness
-  - ser ikke forksjellen mellom rød, grønn blå
-  Images and controls should have equivalent text alternatives.
-– Text, images and page layouts can be resized without losing information.
-– Video content has text or audio alternatives, or audio-description track.
-– Text and images have sufficient contrast between foreground and background color.
-– Provide consistent, predictable navigation.
-– Avoid using color alone to identify links or control
--->
+ 
   <body>
-    <header class="main-header">
+    <div class="border-header-h1">
+      <header class="main-header">
       <a href="index.html">
         <img
           class="logo"
@@ -77,17 +49,16 @@ are certain to read. (Grammar not important.)-->
     </header>
 
     <main>
-    
+      <h1>Tilgjenelighet</h1>
       <div class="seksjon-tittel">
-         <h1>Tilgjenelighet</h1>
-        <p class="tittel-p">
+        <p>
+         <blockquote cite="">
           Tilgjengelighet er praksisen med å gjøre nettsidene dine brukbare av så
-          mange mennesker som mulig. <blockquote>Mozilla.site</blockquote>
+          mange mennesker som mulig.</blockquote>
         </p>
-
       </div>
-
-      <section class="section-øverst">
+    </div>
+      <section class="section">
         <div class="plassere-tekstboks">
           <h2 class="andre-overskrift">
             Hvordan vi gjorde kodevalg for universell utforming
@@ -96,13 +67,14 @@ are certain to read. (Grammar not important.)-->
             
            Før vi startet med å lage sidene, så var det noen kodevalg som vi bestemte oss for. Vi skulle ha et 
           godt organisert innhold som hjelper brukere til å orientere seg og å navigere effektivt. 
-          Sidene skulle har klare titler og er organisert ved hjelp av beskrivende seksjonsoverskrifter. I tillegg var det slik at  skulle velge semantice tags som dere kan se på bildet til høyere så langt det gikk. For at folk som
-          bruker skjermleser skulle få bedre opplevese. Dette er noe vi har gjennomgående i alle sidene.  Et annet valg vi
-          gjorde var at hvordan vi stylet siden vår. Font-style og font-size
-          skulle være lesebar for alle og i tillegg så valgte vi enkle og fine farger slik at folk med fargeblindet også klarer å lese sidene våre. Brukere blir informert om deres nåværende plassering hvor brukeren vet hvilken side og kan bevege seg i de forksjellige sidene. 
-          innenfor et sett med relaterte sider. Tastaturets fokus er synlig, og fokusrekkefølgen følger en meningsfull sekvens. 
-          Hensikten med en lenke er åpenbar, ideelt sett selv når koblingen vises på egen hånd. Overskrifter, lister, tabeller, inndatafelt og innholdsstrukturer er riktig merket.
-          Sekvenser av informasjon eller instruksjoner er uavhengig av enhver presentasjon.. 
+          Sidene skulle har klare titler og er organisert ved hjelp av beskrivende seksjonsoverskrifter hvor overskrifter, lister, avsnitter er riktig merket.
+           I tillegg var det slik at vi skulle velge semantice tags som dere kan se på bildet til høyere så langt det gikk. For at folk som
+          bruker skjermleser skulle få bedre opplevese. Dette er noe vi har gjennomgående i alle sidene. Et annet valg vi
+          gjorde var hvordan vi stylet siden vår. Font-style og font-size skulle være lesebar for alle og i tillegg så valgte vi enkle og fine farger slik at folk med fargeblindet også klarer å lese sidene våre. 
+          Brukere blir informert om deres nåværende plassering hvor brukeren vet hvilken side og kan bevege seg i de forksjellige sidene. 
+          Tastaturets fokus er synlig, brukeren kan navigere med piltasten og tabben. Vi har linker i naven så de som leser kan komme til andre sidene ved å bare bruke tasteturen og fokusrekkefølgen.
+         Hensikten med en lenke er åpenbar og koblingen vises på forhånd i tillegg bestemte vi å ha hoover i alle link slik at de som sliter med å se kan se at det er en link de kan trykke på. Hensikten med en lenke er åpenbar og koblingen vises på forhånd. 
+        
           </p>
         </div>
         <div class="plassere-bilde" id="plassere-bilde-a">
@@ -113,7 +85,7 @@ are certain to read. (Grammar not important.)-->
         </div>
       </section>
 
-      <section class="section-nederst">
+      <section class="section">
         <div class="plassere-tekstboks">
           <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
           <p class="section-tekst">Vi brukte ..... for å teste om koden vår var accecsibility
@@ -128,5 +100,16 @@ are certain to read. (Grammar not important.)-->
         </div>
       </section>
     </main>
+    <!--    Footer Start    -->
+  <footer>
+    <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2> <!-- Eller må vi bruke H1 her?-->
+    <div class="footer-container">
+      <p class="section-tekst">Student 1</p>
+      <p class="section-tekst">Student 2</p>
+      <p class="section-tekst">Student 3</p>
+      <p class="section-tekst">Student 4</p>
+    </div>
+  </footer>
+<!--    Footer Slutt   -->
   </body>
 </html>

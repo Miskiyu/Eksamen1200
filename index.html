@@ -11,15 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/stylesheet_index.css" />
-    <title>Welcome</title>
+    <title>Introduksjon</title>
   </head>
-  <!--- 
-    Welcome! (index.html): this page should be a general information page
-  that helps the visitor understand what this site is, and navigate to the
-  other pages. May be short and simple. Common theme for site: Being a
-  first-year student (at OsloMet).
-  --->
   <body>
+    <!--- NAV--->
     <header class="main-header">
       <a href="index.html">
         <img
@@ -57,39 +52,59 @@
         </ul>
       </nav>
     </header>
+    <!--NAV-SLUTT-->
 
     <main>
+      <!--
+        INTRODUKSJON
+      -->
       <section class="seksjon-introduksjon">
         <div class="introduksjon">
           <div class="introduksjon-tekst-boks">
-            <h1 class="første-overskrift">Første året som student på OsloMet</h1>
-            <p class="introduksjon-beskrivelse"></p>
-            Første året som student på OsloMet har vært krevende og lærerikt. På denne
-            siden skal vi skrive litt om hvordan dette semesteret har vært og
-            reflektere over hva vi egenltig har gjort og lært. Under vil dere
-            se tre ting som vi har lært. I "Naven" vil dere finne tre andre sider som
-            går mer i dybdem av dette semesteret. Den siste siden er en mer kerativ side.
+            <h1 class="første-overskrift">
+              Første året som student på OsloMet
+            </h1>
+            <p class="introduksjon-beskrivelse">
+              Første året som student på OsloMet har vært krevende og lærerikt.
+              På denne siden skal vi skrive litt om hvordan dette semesteret har
+              vært og reflektere over hva vi egenltig har gjort og lært. Under
+              vil dere se tre ting som vi har lært. I "Naven" vil dere finne tre
+              andre sider som går mer i dybdem av dette semesteret. Den siste
+              siden er en mer kerativ side.
+            </p>
           </div>
           <div class="introduksjon-bildet">
             <div class="introduksjon-bilde1">
-              <img src="images/index/3_personer_kollokvie_redigert_500w_middelskvalitet.jpg"
-                srcset="images/index/3_personer_kollokvie_redigert_300w_middelskvalitet.jpg 300w,
-                        images/index/3_personer_kollokvie_redigert_500w_middelskvalitet.jpg 500w,
-                        images/index/3_personer_kollokvie_redigert_750w_middelskvalitet.jpg 750w,
-                        images/index/3_personer_kollokvie_redigert_1000w_middelskvalitet.jpg 1000w"
-                   alt="Tre studenter som studerer og ler sammen"/>
+              <img
+                src="images/index/3_personer_kollokvie_redigert_500w_middelskvalitet.jpg"
+                srcset="
+                  images/index/3_personer_kollokvie_redigert_300w_middelskvalitet.jpg   300w,
+                  images/index/3_personer_kollokvie_redigert_500w_middelskvalitet.jpg   500w,
+                  images/index/3_personer_kollokvie_redigert_750w_middelskvalitet.jpg   750w,
+                  images/index/3_personer_kollokvie_redigert_1000w_middelskvalitet.jpg 1000w
+                "
+                alt="Tre studenter som studerer og ler sammen"
+              />
             </div>
             <div class="introrudksjon-bilde2">
-              <img src="images/index/4_personer_kollokvie_redigert_500w_middelskvalitet.jpg"
-                srcset="images/index/4_personer_kollokvie_redigert_300w_middelskvalitet.jpg 300w,
-                        images/index/4_personer_kollokvie_redigert_500w_middelskvalitet.jpg 500w,
-                        images/index/4_personer_kollokvie_redigert_750w_middelskvalitet.jpg 750w,
-                        images/index/4_personer_kollokvie_redigert_1000w_middelskvalitet.jpg 1000w"
-                   alt="Fire studenter som studerer sammen"/>
+              <img
+                src="images/index/4_personer_kollokvie_redigert_500w_middelskvalitet.jpg"
+                srcset="
+                  images/index/4_personer_kollokvie_redigert_300w_middelskvalitet.jpg   300w,
+                  images/index/4_personer_kollokvie_redigert_500w_middelskvalitet.jpg   500w,
+                  images/index/4_personer_kollokvie_redigert_750w_middelskvalitet.jpg   750w,
+                  images/index/4_personer_kollokvie_redigert_1000w_middelskvalitet.jpg 1000w
+                "
+                alt="Fire studenter som studerer sammen"
+              />
             </div>
           </div>
         </div>
       </section>
+      <!---->
+
+      <!-- TRE-TING-LÆRT-->
+
       <section class="tre-ting">
         <h2 class="kolonne-overskrift">Tre ting vi har lært dette semestret</h2>
         <div class="tre-ting-kolonne">
@@ -113,9 +128,9 @@
               <strong>Ikke gi opp, vær positiv</strong>
             </p>
             <p class="kolonne-tekst">
-              Husk, du er selv din egen største kritiker. Ikke gi opp, det er aldri
-              for sent. Det er vikig å være postiv og rose deg selv når du står
-              på. Det er alltid lys i enden av tunnelen.
+              Husk, du er selv din egen største kritiker. Ikke gi opp, det er
+              aldri for sent. Det er vikig å være postiv og rose deg selv når du
+              står på. Det er alltid lys i enden av tunnelen.
             </p>
           </div>
           <div>
@@ -160,13 +175,25 @@
               </p>
               <p class="kolonne-tekst">
                 Selv i en hektisk hverdag er det viktig med pauser og ordentlige
-                avbrekk. Det er viktig å sette av deler av dagen til å gjøre andre
-                ting enn skolearbeid.
+                avbrekk. Det er viktig å sette av deler av dagen til å gjøre
+                andre ting enn skolearbeid.
               </p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!--    Footer Start    -->
+    <footer>
+      <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2>
+      <!-- Eller må vi bruke H1 her?-->
+      <div class="footer-container">
+        <p class="section-tekst">Student 1</p>
+        <p class="section-tekst">Student 2</p>
+        <p class="section-tekst">Student 3</p>
+        <p class="section-tekst">Student 4</p>
+      </div>
+    </footer>
+    <!--    Footer Slutt   -->
   </body>
 </html>

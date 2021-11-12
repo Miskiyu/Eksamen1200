@@ -5,33 +5,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2;
   color: #555;
   max-width: 1280px;
-  padding: 0.32px;
-  margin: 0 auto;
-}
-h1,
-h2 {
-  font-family: "Times New Roman", Times, serif;
-}
-h1 {
-  margin-bottom: 32px;
-  font-size: 44px;
-  line-height: 1.1;
-  letter-spacing: -1px;
-}
-h2 {
-  margin-bottom: 48px;
-  font-size: 36px;
-  letter-spacing: -0.5px;
-}
-img {
-  max-width: 100%;
 }
 
 /****** HEADER *************/
@@ -75,60 +54,34 @@ label {
 }
 .nav-link:hover,
 .nav-link:active {
-  color: #087f5b;
+  color: orange;
 }
 
-/**************************/
-/**********SEKSJON 1 og 2***********/
-/**************************/
+/*************/
+/* Tekstrelatert:
+h1, h2, a, 
+klasse til h2 og p */
+/************/
 
-.seksjon-introduksjon {
-  padding: 4rem 0 7rem 0;
-  background-color: #fdf2e9;
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 
-.introduksjon {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  margin-top: 64px;
+h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  margin-bottom: 32px;
 }
 
-.introduksjon-tekst-boks {
-  font-size: 20px;
+h2 {
+  font-size: 36px;
+  margin-bottom: 48px;
 }
 
 .introduksjon-beskrivelse {
-  font-size: 28px;
-  line-height: 1.7;
-}
-
-.section-tittel {
-  padding: 4rem 0 7rem 0;
-  text-align: center;
-  background-color: #fdf2e9;
-}
-/**************************/
-/**SEKSJON: TRE TING LÆRT**/
-/**************************/
-.tre-ting {
-  background-color: #fef9f4;
-}
-.tre-ting-kolonne {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
-  margin-bottom: 30px;
-}
-.kolonne-overskrift {
-  text-align: center;
-  padding-top: 30px;
-}
-.kolonne-icon {
-  stroke: #087f5b;
-  width: 32px;
-  height: 32px;
-  padding-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.7rem;
 }
 
 .kolonne-tittel {
@@ -142,13 +95,68 @@ label {
   line-height: 1.7;
 }
 
+/**************************/
+/**********Layout***********/
+/**************************/
+.tre-ting,
+.seksjon-introduksjon,
+.section-tittel {
+  background-color: #fdf2e9;
+}
+.seksjon-introduksjon,
+.section-tittel {
+  padding: 4rem 0 7rem 0;
+}
+
+.introduksjon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.tre-ting-kolonne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  margin-bottom: 30px;
+  padding: 0 30px 30px 30px;
+}
+
+.section-tittel,
+.kolonne-overskrift {
+  text-align: center;
+}
+
+.kolonne-overskrift {
+  padding-top: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**SYMBOL**/
+
+.kolonne-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  padding-bottom: 10px;
+}
+
+/**************************/
+/******MEDIA-QUERY**/
+/**************************/
+
 /*****TABLETS*****/
 
 @media (max-width: 950px) {
   .introduksjon {
     grid-template-columns: 1fr;
     padding: 0 8rem;
-    gap: 4rem;
+    gap: 2rem;
   }
   h1 {
     font-size: 37px;
@@ -191,11 +199,9 @@ for å ha dem som kolonne og ikke rader **/
   }
 }
 
-/**************************/
 /******MEDIA MOBIL SCREEN**/
-/**************************/
 
-@media (max-width: 576px) {
+@media only screen and (min-width: 300px) and (max-width: 576px) {
   .seksjon-introduksjon .tre-ting {
     padding: 2.4rem 0 6.4rem 0;
   }
@@ -210,5 +216,9 @@ for å ha dem som kolonne og ikke rader **/
 
   .logos img {
     height: 1.2rem;
+  }
+
+  .tre-ting-kolonne {
+    padding: 0 15px 15px 15px;
   }
 }

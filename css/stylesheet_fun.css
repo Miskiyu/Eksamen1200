@@ -6,6 +6,7 @@
 }
 body {
   max-width: 1280px;
+  background-color: #d8ebe2;
 }
 
 /****** HEADER *************/
@@ -14,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0dfd2;
   position: relative;
   height: 6rem;
   font-size: 1.2rem;
@@ -36,12 +36,12 @@ body {
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: black;
+  font-weight: 535;
 }
 .nav-link:hover,
 .nav-link:active {
-  color: #087f5b;
+  color: orange;
 }
 label {
   margin: 0 30px 0 0;
@@ -96,47 +96,56 @@ video {
 /******************/
 /***Informasjon***/
 /****************/
+
+.informasjon,
+.informasjon-kart,
+.section-gallery {
+}
+
 .informasjon {
   padding: 10px 20px 15px 40px;
-  margin-bottom: 25px;
-  background-color: #fefbf8;
-}
-.informasjon-liste {
-  margin-bottom: 25px;
-}
-
-li {
-  display: flex;
-  justify-content: space-evenly;
-}
-.tekst {
-}
-.tag-text {
-  justify-content: right;
-}
-
-.info-hvordan {
+  margin: 25px 0 25px 0;
   display: grid;
   grid-template-columns: 1fr;
-
-  margin-top: 10px;
-  padding-top: 15px;
-  margin-bottom: 40px;
 }
+
 .info-overskrift {
   font-size: 30px;
   text-align: center;
   padding-top: 5px;
 }
-.hvordan-overskrift {
+
+.info-underoverskrift {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.hvordan-tekst {
+.info-tekst {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.7em;
+}
+
+.informasjon-kart h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.kart-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+
+  padding-right: 45px;
+}
+
+.kart-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /**************************/
@@ -147,7 +156,6 @@ li {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 2rem 4rem 7rem 4rem;
-  background-color: #fefbf8;
 }
 /*høyde: 100vh betyr innstilt 100 prosent av 
 visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
@@ -159,7 +167,6 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 .gallery-text {
   text-align: center;
   font-size: 30px;
-  background-color: #fefbf8;
 }
 /******************************/
 /*******MEDIA TABLET SCREEN*****/

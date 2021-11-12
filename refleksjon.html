@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Refleksjon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/stylesheet.css" />
-  <title>Refleksjon</title>
-</head>
-
-<!--This page must contain a short text (500-700 words)
+  <!--This page must contain a short text (500-700 words)
 describing the challenges experienced by the (one, several or all)
 members of the group when transitioning from upper-secondary school
 (or work-life) to university. Reflect on any of the following topics:
@@ -23,61 +22,89 @@ language/grammar of the paragraphs. We expect headings, text and
 images that relate to each other (content). Headings should be
 informative and grammatically correct (proper visual hierarchy).-->
 
-<body>
-  <header class="main-header">
-    <a href="#">
-      <img class="logo" alt="" src="images/index/OsloMet_logo for trykk.png" />
-    </a>
+  <body>
+    <header class="main-header">
+      <a href="index.html">
+        <img
+          class="logo"
+          alt="Bildet av logoen til OsloMet. Det står OsloMet i svart og hvit."
+          src="images/index/OsloMet_logo for trykk.png"
+        />
+      </a>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li>
-          <a class="nav-link" href="refleksjon.html" target="_blank">Refleksjon</a>
-        </li>
-        <li>
-          <a class="nav-link" href="accecsibility.html" target="_blank">Tilgjenelighet</a>
-        </li>
-        <li>
-          <a class="nav-link" href="aktuellinformasjon.html" target="_blank">Aktuelle informasjon</a>
-        </li>
-        <li><a class="nav-link" href="fun.html" target="_blank">Kreativ side</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Refleksjon</h1>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="index.html" target="_blank">Hjem</a>
+          </li>
+          <li>
+            <a class="nav-link" href="refleksjon.html" target="_blank"
+              >Refleksjon</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="accecsibility.html" target="_blank"
+              >Tilgjenelighet</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="aktuellinformasjon.html" target="_blank"
+              >Aktuelle informasjon</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="fun.html" target="_blank">Kreativ side</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Refleksjon</h1>
 
-    <section class="section-øverst">
-      <div class="plassere-tekstboks">
-        <h2 class="andre-overskrift">
-          Hvordan er det å være en student?
-        </h2>
-        <p class="section-tekst">
-          Den største utfordringen jeg har møtt på med overgangen fra videregående skole til universitet er hvor mye
-          selvstudie som kreves. På videregående er det som regel nok med å kun følge med i timen og øve litt før
-          prøver, men når det kommer til universitetet så er det litt mer å holde styr på, og mye mer ansvar ovenfor
-          skolearbeid.
+      <section class="section">
+        <div class="plassere-tekstboks">
+          <h2 class="andre-overskrift">Hvordan er det å være en student?</h2>
+          <p class="section-tekst">
+            Den største utfordringen jeg har møtt på med overgangen fra
+            videregående skole til universitet er hvor mye selvstudie som
+            kreves. På videregående er det som regel nok med å kun følge med i
+            timen og øve litt før prøver, men når det kommer til universitetet
+            så er det litt mer å holde styr på, og mye mer ansvar ovenfor
+            skolearbeid. Jeg har også kjent på hvor selvstendig man må være, det
+            er ingen lærer som sender deg melding på nettene og påminner deg på
+            innleveringsfristen eller spørr om du trenger ekstra hjelp. Nå er
+            det et helt nytt kjør hvor du må minne deg selv på og spørre selv
+            når du trenger hjelp med noe.
+          </p>
+        </div>
+        <div class="plassere-bilde">
+          <img class="section-overstebilde" />
+        </div>
+      </section>
 
-          Jeg har også kjent på hvor selvstendig man må være, det er ingen lærer som sender deg melding på nettene og
-          påminner deg på innleveringsfristen eller spørr om du trenger ekstra hjelp. Nå er det et helt nytt kjør hvor
-          du må minne deg selv på og spørre selv når du trenger hjelp med noe.
-        </p>
+      <section class="section">
+        <div class="plassere-tekstboks">
+          <h2 class="andre-overskrift"></h2>
+          <p class="section-tekst"></p>
+        </div>
+        <div class="plassere-bilde">
+          <img class="section-overstebilde" />
+        </div>
+      </section>
+    </main>
+    <!--    Footer Start    -->
+    <footer>
+      <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2>
+      <!-- Eller må vi bruke H1 her?-->
+      <div class="footer-container">
+        <p class="section-tekst">Student 1</p>
+        <p class="section-tekst">Student 2</p>
+        <p class="section-tekst">Student 3</p>
+        <p class="section-tekst">Student 4</p>
       </div>
-      <div class="plassere-bilde">
-        <img class="section-overstebilde" />
-      </div>
-    </section>
-
-    <section class="section-nederst">
-      <div class="plassere-tekstboks">
-        <h2 class="andre-overskrift"></h2>
-        <p class="section-tekst"></p>
-      </div>
-      <div class="plassere-bilde">
-        <img class="section-overstebilde" />
-      </div>
-    </section>
-  </main>
-</body>
-
+    </footer>
+    <!--    Footer Slutt   -->
+  </body>
 </html>

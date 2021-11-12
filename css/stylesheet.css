@@ -8,35 +8,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*************/
-/* Body, main, H1*/
-/************/
-
-.border-header-h1 {
-  border-style: solid;
-}
-
 body {
-  line-height: 2;
   color: #555;
+  background-color: white;
   max-width: 1280px;
-}
-
-main {
-  /** Trenger kanskje ikke denne?*/ 
-}
-
-h1,
-h2 {
-  font-family: "Times New Roman", Times, serif;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 25px;
-  background-color: #fdf2e9;
 }
 
 /**************************/
@@ -69,7 +44,7 @@ label {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   list-style: none;
 }
 
@@ -82,94 +57,94 @@ label {
 }
 .nav-link:hover,
 .nav-link:active {
-  color: #087f5b;
+  color: orange;
 }
 
 /*************/
-/* øverste section*/
+/* Tekstrelatert:
+h1, h2, a, 
+klasse til h2 og p */
 /************/
-/**Dette er bare access siden som har */
-.seksjon-tittel {
-  background-color: #fdf2e9;
-  position: relative;
-  padding-left: 20px;
-  text-align: center;
-}
-.andre-overskrift {
-  font-size: 25px;
-  line-height: 27px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 
+.andre-overskrift,
 .section-tekst {
-  font-size: 18px;
-  line-height: 1.7;
-  padding-bottom: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 27px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 40px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: 8px;
 }
 
 a {
   text-decoration: none;
 }
 
-.section-overstebilde {
-  max-width: 100%;
+.andre-overskrift {
+  font-size: 25px;
 }
 
-.section-øverst {
-  max-width: auto;
-  display: flex;
-  background-color: #fdf2e9;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 15px;
+.section-tekst {
+  font-size: 18px;
+}
+
+/*************/
+/* Layout*/
+/************/
+
+.border-header-h1,
+.section,
+footer {
   border-style: solid;
-  align-items: center;
+  background-color: #fdf2e9;
 }
 
-.plassere-tekstboks {
-  width: 500px;
+.section,
+footer {
+  margin-top: 15px;
 }
 
+.section,
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plassere-tekstboks,
 .plassere-bilde {
   width: 500px;
 }
 
-/*************/
-/* Nedersete section*/
-/************/
-
-.section-nederst {
-  padding: 4.7rem 0 9.6rem 0;
+.section {
   max-width: auto;
-  display: flex;
-  background-color: #fdf2e9;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 15px;
-  border-style: solid;
-}
-
-footer{
-  border-style: solid;
-  background-color: #fdf2e9;
-  margin-top: 15px;
-}
-
-.footer-container{
-  display: flex;
-  justify-content: space-evenly;
+  flex-direction: row; /* unødvendig?*/
   align-items: center;
 }
 
+/**Dette er bare tilgjengelighet.html siden som har */
+
+.seksjon-tittel {
+  text-align: center;
+}
+.section-overstebilde {
+  max-width: 100%;
+}
+
+/****Media-Query**/
 /*****TABLETS*****/
+/*****************/
 @media (max-width: 950px) {
-  .section-øverst {
-    flex-direction: column;
-  }
-  .section-nederst {
+  .section {
     flex-direction: column;
   }
   /**FOR NAVEN**/
@@ -206,12 +181,10 @@ for å ha dem som kolonne og ikke rader **/
   }
 }
 
-/**************************/
 /******MEDIA MOBIL SCREEN**/
-/**************************/
-
-@media (max-width: 576px) {
-  .plassere-tekstboks, .plassere-bilde {
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .plassere-tekstboks,
+  .plassere-bilde {
     width: 300px;
   }
   h1 {
