@@ -64,7 +64,7 @@
           </h2>
           <p class="section-tekst">
             
-           Før vi startet med å lage sidene, så var det noen kodevalg som vi bestemte oss for. Vi skulle ha et 
+           Får vi startet med å lage sidene, så var det noen kodevalg som vi bestemte oss for. Vi skulle ha et 
           godt organisert innhold som hjelper brukere til å orientere seg og å navigere effektivt. 
           Sidene skulle har klare titler og er organisert ved hjelp av beskrivende seksjonsoverskrifter hvor overskrifter, lister, avsnitter er riktig merket.
            I tillegg var det slik at vi skulle velge semantice tags som dere kan se på bildet til høyere så langt det gikk. For at folk som
@@ -77,8 +77,8 @@
           </p>
         </div>
         <div class="plassere-bilde" id="plassere-bilde-a">
-          <img class="section-overstebilde" src="images/accesibility/kodevalg1.PNG" alt="Bildet av html kode hvor en kode av header og nav står  " />
-          <img class="section-overstebilde" src="images/accesibility/kodevalg2.PNG" alt="bildet av en CSS hvor det står en kode der h1,h2 og nav-link blir stylet" />
+          <img class="section-overstebilde" src="images/tilgjengelighet/kodevalg1.PNG" alt="Bildet av html kode hvor en kode av header og nav står  " />
+          <img class="section-overstebilde" src="images/tilgjengelighet/kodevalg2.PNG" alt="bildet av en CSS hvor det står en kode der h1,h2 og nav-link blir stylet" />
           
         </div>
       </section>
@@ -86,15 +86,19 @@
       <section class="section">
         <div class="plassere-tekstboks">
           <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
-          <p class="section-tekst">Vi brukte ..... for å teste om koden vår var accecsibility
-            Bilder  inkludere tilsvarende alternativ tekst (alt tekst) i markeringen/koden. Hvis alternativ tekst ikke er oppgitt for bilder, er bildeinformasjonen utilgjengelig, for eksempel for personer som ikke kan se og bruke en skjermleser som leser høyt informasjonen på en side, inkludert alternativteksten for det visuelle bildet. Når tilsvarende alt-tekst er gitt, er informasjonen tilgjengelig for personer som er blinde, samt for personer som slår av bilder (for eksempel i områder med dyr eller lav båndbredde). Den er også tilgjengelig for teknologier som ikke kan se bilder, for eksempel søkemotorer. Noen mennesker kan ikke bruke en mus, inkludert mange eldre brukere med begrenset finmotorisk kontroll. Et tilgjengelig nettsted er ikke avhengig av musen; den gjør all funksjonalitet tilgjengelig fra et tastatur. Da kan funksjonshemmede bruke hjelpeteknologier som etterligner tastaturet, for eksempel taleinndata. Akkurat som bilder ikke er tilgjengelige for folk som ikke kan se, er ikke lydfiler tilgjengelige for folk som ikke kan høre. Å gi en tekstutskrift gjør lydinformasjonen tilgjengelig for personer som er døve eller tunghørte, så vel som for søkemotorer og annen teknologi som ikke kan høre. Det er enkelt og relativt billig for nettsteder å gi transkripsjoner. Det finnes også transkripsjonstjenester som lager tekstutskrifter i HTML-format.
-
-
-
+          <p class="section-tekst">
+            For å sjekek koden vår og valideren den brukte vi siden web accessibility evalutaion tool (WAVE). Denne siden brukte 
+            vi for å sjekke alle de fire sidene. De fire første sidene kom med en alerts og det var at vi hadde 
+            brukt redundant link i naven. Vi hadde en link i logoen som var lik hjemme linken det resulterer til i ytterligere navigering og repetisjon for tastatur- og skjermleserbrukere. Så dette tok vi vekk, ellers som dere kan se på bildet til 
+            venstre så var det ikke noe annet errors eller alerts i de fire sidene våres. På den andre siden så var det slik at den kereative siden hadde
+            flere errors og allert. Det første var at vi hadde en video og tekst over videoen og det var lav konstrast mellom teksten og bildet, så det måtte vi forandre på. I tillegg så hadde vi en video og vi fikk en varsel på dette, fordi hvis det er
+            en video i siden så må lydinnhold presenteres i et tekstformat for å være fullt tilgjengelig for brukere som er døve og tunghørte. Men videoen vår hadde 
+            ikke noe lyd så den er tilgjengelig for alle. 
           </p>
         </div>
-        <div class="plassere-bilde">
-          <img class="section-overstebilde" src="" alt=""/>
+        <div class="plassere-bilde" id="plassere-bilde-a">
+          <img class="section-overstebilde" src="images/tilgjengelighet/sjekkekode.PNG" alt="Bildet av siden vår etter i validation siden"/>
+          <img class="section-overstebilde" src="images/tilgjengelighet/sjekkekode1.PNG" alt="">
         </div>
       </section>
     </main>
