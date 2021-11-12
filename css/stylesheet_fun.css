@@ -52,8 +52,9 @@ label {
 #toggle {
   display: none;
 }
-
-/*****Første del av siden******/
+/****************************/
+/*****Video og teksten******/
+/***************************/
 .første-del {
   width: 100%;
   min-height: 82vh;
@@ -91,6 +92,10 @@ video {
   max-width: 700px;
   line-height: 1.5;
 }
+
+/******************/
+/***Informasjon***/
+/****************/
 .informasjon {
   padding: 10px 20px 15px 40px;
   margin-bottom: 25px;
@@ -104,10 +109,6 @@ li {
   padding-left: 20px;
   display: flex;
   gap: 50px;
-  align-items: center;
-}
-.område {
-  position: relative;
 }
 
 .info-hvordan {
@@ -132,6 +133,11 @@ li {
   font-size: 17px;
   line-height: 1.7;
 }
+
+/**************************/
+/******Bildet sekvens******/
+/**************************/
+
 .gallery {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -139,7 +145,7 @@ li {
   background-color: #fefbf8;
 }
 /*høyde: 100vh betyr innstilt 100 prosent av 
-visningshøyden i forhold til enhetens høyde. som er de tre 6 bildene vi har*/
+visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 .gallery img {
   width: 100%;
   object-fit: cover;
@@ -150,6 +156,9 @@ visningshøyden i forhold til enhetens høyde. som er de tre 6 bildene vi har*/
   font-size: 30px;
   background-color: #fefbf8;
 }
+/******************************/
+/*******MEDIA TABLET SCREEN*****/
+/*****************************/
 
 @media (max-width: 950px) {
   /**FOR NAVEM**/
