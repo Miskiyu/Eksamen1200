@@ -3,7 +3,6 @@
 /************/
 * {
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,6 +11,7 @@ body {
   color: #555;
   background-color: white;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 /**************************/
@@ -81,7 +81,8 @@ h2 {
 h1 {
   font-size: 48px;
   line-height: 40px;
-  padding-bottom: 25px;
+  letter-spacing: 1.2px;
+  padding-bottom: 5px;
   text-align: center;
   margin-top: 8px;
 }
@@ -94,7 +95,8 @@ a {
   font-size: 25px;
 }
 
-.section-tekst {
+.section-tekst, 
+blockquote {
   font-size: 18px;
 }
 

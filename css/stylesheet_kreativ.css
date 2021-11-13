@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,6 +6,7 @@
 body {
   max-width: 1380px;
   background-color: #d8ebe2;
+  margin: 0 auto;
 }
 
 /****** HEADER *************/
@@ -67,7 +67,7 @@ klasse til h2 og p */
   line-height: 1.5em;
   font-weight: 500;
 }
-
+                                   /*    Her er det nie tull med line-height, er definert to ganger etter hverandre ...   */
 .video-text h1 {
   font-size: 3em;
   font-weight: 800;
@@ -148,7 +148,7 @@ video {
   padding: 12px 10px;
 }
 .kart-responsive {
-  padding: 0 100px 0 100px;
+  padding: 0 100px;
 }
 
 .gallery {
