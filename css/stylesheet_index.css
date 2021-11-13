@@ -68,6 +68,13 @@ h2 {
   font-family: "Times New Roman", Times, serif;
 }
 
+.andre-overskrift,
+.footer-tekst {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 27px;
+}
+
 h1 {
   font-size: 44px;
   line-height: 1.1;
@@ -95,12 +102,22 @@ h2 {
   line-height: 1.7;
 }
 
+.andre-overskrift {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.footer-tekst {
+  font-size: 18px;
+}
+
 /**************************/
 /**********Layout***********/
 /**************************/
 .tre-ting,
 .seksjon-introduksjon,
-.section-tittel {
+.section-tittel,
+footer {
   background-color: #fdf2e9;
 }
 .seksjon-introduksjon,
@@ -108,25 +125,36 @@ h2 {
   padding: 4rem 0 7rem 0;
 }
 
-.introduksjon {
+.introduksjon,
+.tre-ting-kolonne{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
+}
+
+.introduksjon {
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 10px;
   padding-left: 30px;
 }
 
 .tre-ting-kolonne {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
-  margin-bottom: 30px;
   padding: 0 30px 30px 30px;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .section-tittel,
 .kolonne-overskrift {
   text-align: center;
+}
+
+footer{
+  border-style: solid;
 }
 
 .kolonne-overskrift {
