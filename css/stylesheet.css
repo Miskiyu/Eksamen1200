@@ -95,7 +95,7 @@ a {
   font-size: 25px;
 }
 
-.section-tekst, 
+.section-tekst,
 blockquote {
   font-size: 18px;
 }
@@ -123,13 +123,12 @@ footer {
 }
 
 .plassere-tekstboks,
-.plassere-bilde {
+.plassere-bilde,
+.bilde-en {
   width: 500px;
 }
 
 .section {
-  max-width: auto;
-  flex-direction: row; /* unødvendig?*/
   align-items: center;
 }
 
@@ -173,11 +172,11 @@ for å ha dem som kolonne og ikke rader **/
   #toggle:checked + nav {
     display: block;
   }
-  #plassere-bilde-a {
+  .bilde-en {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  #plassere-bilde-a img {
+  .bilde-en img {
     width: 100%;
     object-fit: cover;
   }

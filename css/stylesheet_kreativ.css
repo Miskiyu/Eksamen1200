@@ -67,17 +67,18 @@ klasse til h2 og p */
   line-height: 1.5em;
   font-weight: 500;
 }
-                                   /*    Her er det nie tull med line-height, er definert to ganger etter hverandre ...   */
+.video-text h1,
+.video-text h2 {
+  text-transform: uppercase;
+}
+
 .video-text h1 {
   font-size: 3em;
   font-weight: 800;
-  line-height: 1em;
-  text-transform: uppercase;
 }
 .video-text h2 {
   font-size: 1.5em;
   font-weight: 600;
-  text-transform: uppercase;
 }
 .video-text p {
   font-size: 1em;
