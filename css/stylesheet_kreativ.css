@@ -62,9 +62,9 @@ klasse til h2 og p */
 .video-text h1,
 .video-text h2,
 .video-text p {
-  color: blue;
-  text-shadow: 5px 2px 30px rgb(240, 231, 231);
-  line-height: 1.5em;
+  color: rgb(5, 5, 19);
+  text-shadow: 5px 2px 30px rgb(250, 250, 250);
+  line-height: 1em;
   font-weight: 500;
 }
 .video-text h1,
@@ -81,7 +81,8 @@ klasse til h2 og p */
   font-weight: 600;
 }
 .video-text p {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: 00;
 }
 
 .info-overskrift,
@@ -112,7 +113,7 @@ klasse til h2 og p */
 
 .videodel {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   padding: 100px;
 }
 video {
@@ -173,26 +174,24 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 /**************************/
 
 /*******STOR TABLET SCREEN 950px*****/
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 968px) {
   label {
     display: block;
     cursor: pointer;
   }
-  /**Satte naven til display none for å få det bort og satt flex direction til colum for
-for å ha dem som kolonne og ikke rader **/
+
   nav {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .nav-list {
+    display: flex;
     flex-direction: column;
+    padding-left: 100px;
+    margin-top: 100px;
   }
-  /**alle linkene i nav-listen satt jeg til display block og lagde border for */
 
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
-  }
   /*Når du trykker på togglen så skal naven komme ned*/
   #toggle:checked + nav {
     display: block;
@@ -200,7 +199,7 @@ for å ha dem som kolonne og ikke rader **/
 
   video {
     width: 100%;
-    height: 60%;
+    height: 85%;
   }
   .videodel {
     min-height: 55vh;
@@ -212,41 +211,10 @@ for å ha dem som kolonne og ikke rader **/
 /**************************/
 /******MEDIA MOBIL SCREEN**/
 /**************************/
-@media only screen and (min-width: 365px) and (max-width: 576px) {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-
-  nav {
-    text-align: center;
-
-    display: none;
-    flex-direction: column;
-  }
-
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
-  }
-
-  #toggle:checked + nav {
-    display: block;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .logos img {
-    height: 1.2rem;
-  }
+@media only screen and (max-width: 680px) {
   .videodel {
     width: 100%;
-    padding: 80px;
+    padding: 86px;
   }
 
   video {
@@ -254,17 +222,12 @@ for å ha dem som kolonne og ikke rader **/
     height: 90%;
   }
   .video-text h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
-  .gallery {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .gallery img {
-    width: 100%;
+  .gallery-item {
+    width: auto;
+    max-width: 100%;
     height: auto;
-    gap: 200px;
-    object-fit: cover;
   }
 
   .kart-responsive {
@@ -275,45 +238,14 @@ for å ha dem som kolonne og ikke rader **/
 /*************************************/
 /******MEDIA MINDRE ENN MOBIL SCREEN**/
 /*************************************/
-@media only screen and (min-width: 234px) and (max-width: 365px) {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-
-  nav {
-    text-align: center;
-
-    display: none;
-    flex-direction: column;
-  }
-
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
-  }
-
-  #toggle:checked + nav {
-    display: block;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .logos img {
-    height: 1.2rem;
-  }
+@media only screen and (max-width: 320px) {
   .videodel {
     width: 100%;
-    padding: 80px;
+    padding: 70px;
   }
   video {
     width: 100%;
-    height: 90%;
+    height: 70%;
   }
 
   .video-text h1 {
@@ -323,16 +255,9 @@ for å ha dem som kolonne og ikke rader **/
     font-size: 20px;
   }
   .video-text p {
-    font-size: 12px;
+    font-size: 10px;
   }
-  .gallery {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    gap: 200px;
-    object-fit: cover;
+  .info-overskrift {
+    font-size: 25px;
   }
 }
