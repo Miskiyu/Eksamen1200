@@ -73,7 +73,6 @@ h2 {
 .paragraf-tekst {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 32px;
 }
 
 h1 {
@@ -91,11 +90,16 @@ a {
 
 .andre-overskrift {
   font-size: 28px;
+  line-height: 32px;
 }
 
 .paragraf-tekst,
 blockquote {
   font-size: 18px;
+}
+
+.paragraf-tekst{
+  line-height: 25px;
 }
 
 /*************/
