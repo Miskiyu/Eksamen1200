@@ -59,13 +59,11 @@ label {
 .nav-link:active {
   color: orange;
 }
-
 /*************/
 /* Tekstrelatert:
 h1, h2, a, 
 klasse til h2 og p */
 /************/
-
 h1,
 h2 {
   font-family: "Times New Roman", Times, serif;
@@ -186,14 +184,14 @@ for å ha dem som kolonne og ikke rader **/
 @media only screen and (max-width: 576px) and (min-width: 300px) {
   .plassere-tekstboks,
   .plassere-bilde {
-   /* width: 290px; */
-   width: 100%;
+    /* width: 290px; */
+    width: 100%;
   }
   h1 {
     padding-top: 6px;
     font-size: 2rem;
   }
-  .footer-container{
+  .footer-container {
     flex-direction: column;
   }
 }

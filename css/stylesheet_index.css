@@ -12,7 +12,6 @@ body {
   background-color: #fdf2e9;
   max-width: 1280px;
   margin: 0 auto;
-  
 }
 
 /****** HEADER *************/
@@ -89,7 +88,7 @@ h2 {
 
 .introduksjon-beskrivelse {
   font-size: 22px;
-  line-height: 2.0rem;
+  line-height: 2rem;
 }
 
 .kolonne-tittel {
@@ -122,7 +121,7 @@ h2 {
 }
 
 .introduksjon,
-.tre-ting-kolonne{
+.tre-ting-kolonne {
   display: grid;
   column-gap: 80px;
 }
@@ -138,7 +137,6 @@ h2 {
   padding: 0 30px 30px 30px;
 }
 
-
 .footer-container {
   display: flex;
   justify-content: space-evenly;
@@ -149,7 +147,7 @@ h2 {
   text-align: center;
 }
 
-footer{
+footer {
   border-style: solid;
 }
 
@@ -270,7 +268,7 @@ for å ha dem som kolonne og ikke rader **/
   }
 
   nav,
-  .footer-container{
+  .footer-container {
     flex-direction: column;
   }
 }
