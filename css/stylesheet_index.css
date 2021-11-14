@@ -252,7 +252,6 @@ for å ha dem som kolonne og ikke rader **/
     text-align: center;
     width: 100%;
     display: none;
-    flex-direction: column;
   }
   /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
 
@@ -268,5 +267,10 @@ for å ha dem som kolonne og ikke rader **/
 
   .tre-ting-kolonne {
     padding: 0 15px 15px 15px;
+  }
+
+  nav,
+  .footer-container{
+    flex-direction: column;
   }
 }
