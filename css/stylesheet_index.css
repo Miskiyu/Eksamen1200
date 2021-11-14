@@ -89,7 +89,7 @@ h2 {
 
 .introduksjon-beskrivelse {
   font-size: 22px;
-  line-height: 1.7rem;
+  line-height: 2.0rem;
 }
 
 .kolonne-tittel {
@@ -115,12 +115,7 @@ h2 {
 /**************************/
 /**********Layout***********/
 /**************************/
-.tre-ting,
-.seksjon-introduksjon,
-.section-tittel,
-footer {
- /* background-color: #fdf2e9; */                   /* Dette kan fjernes om det fungerer hos Miski?*/
-}
+
 .seksjon-introduksjon,
 .section-tittel {
   padding: 4rem 0 7rem 0;

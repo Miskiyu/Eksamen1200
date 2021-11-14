@@ -72,10 +72,10 @@ h2 {
 }
 
 .andre-overskrift,
-.section-tekst {
+.paragraf-tekst {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 27px;
+  line-height: 32px;
 }
 
 h1 {
@@ -92,10 +92,10 @@ a {
 }
 
 .andre-overskrift {
-  font-size: 25px;
+  font-size: 28px;
 }
 
-.section-tekst,
+.paragraf-tekst,
 blockquote {
   font-size: 18px;
 }
