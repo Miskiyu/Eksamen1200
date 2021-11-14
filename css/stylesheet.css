@@ -188,7 +188,6 @@ for å ha dem som kolonne og ikke rader **/
 @media only screen and (max-width: 576px) and (min-width: 300px) {
   .plassere-tekstboks,
   .plassere-bilde {
-    /* width: 290px; */
     width: 100%;
   }
   h1 {
@@ -197,5 +196,13 @@ for å ha dem som kolonne og ikke rader **/
   }
   .footer-container {
     flex-direction: column;
+  }
+  .bilde-en {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bilde-en img {
+    width: 70%;
+    margin:0 auto;
   }
 }
