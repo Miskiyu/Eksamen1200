@@ -197,7 +197,6 @@ for å ha dem som kolonne og ikke rader **/
     display: none;
     flex-direction: column;
   }
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
 
   .nav-list a {
     display: block;
