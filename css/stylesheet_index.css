@@ -20,12 +20,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  background-color: blue;
   height: 7rem;
   font-size: 1.2rem;
   padding: 0 2.8rem;
 }
-
+.nav-list {
+  display: flex;
+}
 .logo {
   height: 3.9rem;
 }
@@ -52,7 +54,6 @@ label {
   color: #333;
   font-weight: 500;
 }
-.nav-link:hover,
 .nav-link:active {
   color: orange;
 }
@@ -191,22 +192,33 @@ img {
   }
   /**Satte naven til display none for å få det bort og satt flex direction til colum for
 for å ha dem som kolonne og ikke rader **/
-  nav {
-    text-align: center;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-  }
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
 
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
+  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
+  header .main-header {
+    background-color: blue;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
   }
+
+  nav {
+    flex-direction: column;
+    display: none;
+  }
+  .introduksjon {
+    margin-top: 300px;
+  }
+
   /*Når du trykker på togglen så skal naven komme ned*/
   #toggle:checked + nav {
     display: block;
+  }
+  label {
+    flex-direction: column;
+  }
+  .nav-list {
+    flex-direction: column;
   }
 
   /*gjorde tre ting seksjonnene til 1 rad og 1 kolonne*/
