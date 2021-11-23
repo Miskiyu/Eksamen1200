@@ -224,6 +224,7 @@ footer {
   .plassere-tekstboks {
     padding-left: 20px;
   }
+
   .bilde-en {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

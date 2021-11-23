@@ -66,7 +66,7 @@
     </header>
 
     <div class="border-header-h1">
-      <h1 tabindex="0">Tilgjenelighet</h1>
+      <h1>Tilgjenelighet</h1>
       <div class="seksjon-tittel">
         <blockquote
           cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
@@ -100,7 +100,7 @@
             lese sidene våre.
           </p>
 
-          <p tabindex="0" class="paragraf-tekst">
+          <p class="paragraf-tekst">
             Brukere blir informert om deres nåværende plassering hvor brukeren
             vet hvilken side og kan bevege seg i de forksjellige sidene.
             Tastaturets fokus er synlig, vi la til også tabindex i overksrifter
@@ -140,29 +140,28 @@
 
       <section class="section">
         <div class="plassere-tekstboks">
-          <h2 tabindex="0" class="andre-overskrift">
-            Hvordan vi testet koden vår
-          </h2>
-          <p tabindex="0" class="paragraf-tekst">
+          <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
+          <p class="paragraf-tekst">
             For å sjekek koden vår og valideren den brukte vi siden web
             accessibility evalutaion tool
             <a href="https://wave.webaim.org/">(WAVE)</a>. Denne siden brukte vi
-            for å sjekke alle de fire sidene. De fire første sidene kom med en
-            alerts og det var at vi hadde brukt redundant link i naven. Vi hadde
-            en link i logoen som var lik hjemme linken det resulterer til i
-            ytterligere navigering og repetisjon for tastatur- og
+            for å sjekke alle de fire sidene. De fire første sidene kom med
+            flere alerts og det var at vi hadde brukt redundant link i naven. Vi
+            hadde en link i logoen som var lik hjemme linken det resulterer til
+            i ytterligere navigering og repetisjon for tastatur- og
             skjermleserbrukere. Så dette tok vi vekk. I tillegg hadde vi skrevet
             feil tabindex på siden vår som resultete til at vi fikk allerts i
             alle avsnitter og overksrifter. Dette var på grunn av at vi hadde
-            brukt tabindex 1 om ellers som dere kan se på bildet så var det ikke
-            noe annet errors eller alerts i de fire sidene våres. På den andre
-            siden så var det slik at den kereative siden hadde flere errors og
-            allert. Det første var at vi hadde en video og tekst over videoen og
-            det var lav konstrast mellom teksten og bildet, så det måtte vi
-            forandre på. I tillegg så hadde vi en video og vi fikk en varsel på
-            dette, fordi hvis det er en video i siden så må lydinnhold
+            brukt tabindex 1 og 2 og det visste seg at dette vil bare føre til
+            forvirring om hva som er hva og ikke er interaktivt, spesielt hvis
+            man ikke kan se skjermen. Ellers så hadde ikke våre fire sider noen
+            andre errors, som dere kan se på bildet. Vi valgte også å legge til
+            kereative siden, den hadde som dere kan se på bildet flere errors.
+            Det første var at vi hadde en video og tekst over videoen og det var
+            lav konstrast mellom teksten og bildet. I tillegg fikk vi varsel på
+            videoen fordi hvis det er en video i siden så må lydinnhold
             presenteres i et tekstformat for å være fullt tilgjengelig for
-            brukere som er døve og tunghørte. Men videoen vår hadde ikke noe lyd
+            brukere som er døve og tunghørte. Men videoen vår har ikke noe lyd
             så den er tilgjengelig for alle.
           </p>
         </div>
