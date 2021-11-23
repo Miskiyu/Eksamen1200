@@ -17,18 +17,24 @@ body {
 /**************************/
 /****** HEADER *************/
 /**************************/
-
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fdf2e9;
-  position: relative;
-  height: 7rem;
+  height: 5rem;
   font-size: 1.2rem;
-  padding: 0 2.8rem;
+  line-height: 29px;
+  letter-spacing: 2px;
+  background-color: rgb(255, 190, 70);
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-
+.nav-list {
+  display: flex;
+}
 .logo {
   height: 3.9rem;
 }
@@ -44,7 +50,7 @@ label {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -55,9 +61,8 @@ label {
   color: #333;
   font-weight: 500;
 }
-.nav-link:hover,
 .nav-link:active {
-  color: orange;
+  color: rgb(20, 19, 16);
 }
 /*************/
 /* Tekstrelatert:
@@ -77,8 +82,8 @@ h2 {
 
 h1 {
   font-size: 48px;
-  line-height: 40px;
-  letter-spacing: 1.2px;
+  line-height: 72px;
+  letter-spacing: 5px;
   padding-bottom: 5px;
   text-align: center;
   margin-top: 8px;
@@ -90,16 +95,18 @@ a {
 
 .andre-overskrift {
   font-size: 28px;
-  line-height: 32px;
+  line-height: 42px;
+  letter-spacing: 2px;
 }
 
 .paragraf-tekst,
 blockquote {
   font-size: 18px;
+  letter-spacing: 2px;
 }
 
-.paragraf-tekst{
-  line-height: 25px;
+.paragraf-tekst {
+  line-height: 28px;
 }
 
 /*************/
@@ -112,7 +119,9 @@ footer {
   border-style: solid;
   background-color: #fdf2e9;
 }
-
+.border-header-h1 {
+  margin-top: 80px;
+}
 .section,
 footer {
   margin-top: 15px;
@@ -150,30 +159,7 @@ footer {
   .section {
     flex-direction: column;
   }
-  /**FOR NAVEN**/
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  /**Satte naven til display none for å få det bort og satt flex direction til colum for
-for å ha dem som kolonne og ikke rader **/
-  nav {
-    text-align: center;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-  }
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
 
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
-  }
-  /*Når du trykker på togglen så skal naven komme ned*/
-  #toggle:checked + nav {
-    display: block;
-  }
   .bilde-en {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -185,17 +171,58 @@ for å ha dem som kolonne og ikke rader **/
 }
 
 /******MEDIA MOBIL SCREEN**/
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 800px) and (min-width: 500px) {
   .plassere-tekstboks,
   .plassere-bilde {
     width: 100%;
   }
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    z-index: 9999;
+  }
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: rgb(247, 206, 94);
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+
   h1 {
     padding-top: 6px;
     font-size: 2rem;
   }
+
   .footer-container {
     flex-direction: column;
+  }
+  .plassere-tekstboks {
+    padding-left: 20px;
   }
   .bilde-en {
     display: grid;
@@ -203,6 +230,6 @@ for å ha dem som kolonne og ikke rader **/
   }
   .bilde-en img {
     width: 70%;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }

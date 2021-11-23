@@ -15,15 +15,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  height: 6rem;
+  height: 5rem;
   font-size: 1.2rem;
-  padding: 0 2.8rem;
-  z-index: 1;
+  line-height: 29px;
+  letter-spacing: 2px;
+  background-color: rgb(77, 177, 119);
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-
+.nav-list {
+  display: flex;
+}
 .logo {
   height: 3.9rem;
+}
+label {
+  margin: 0 30px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+#toggle {
+  display: none;
 }
 .nav-list {
   display: flex;
@@ -36,21 +52,11 @@ body {
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: rgb(8, 8, 8);
-  font-weight: 555;
+  color: #333;
+  font-weight: 500;
 }
-.nav-link:hover,
 .nav-link:active {
-  color: orange;
-}
-label {
-  margin: 0 30px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  display: none;
-}
-#toggle {
-  display: none;
+  color: rgb(20, 19, 16);
 }
 
 /*************/
@@ -62,8 +68,7 @@ klasse til h2 og p */
 .video-text h1,
 .video-text h2,
 .video-text p {
-  color: rgb(5, 5, 19);
-  text-shadow: 5px 2px 30px rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   line-height: 1em;
   font-weight: 500;
 }
@@ -175,24 +180,39 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 
 /*******STOR TABLET SCREEN 950px*****/
 @media screen and (max-width: 968px) {
+  /**FOR NAVEM**/
   label {
     display: block;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
-  nav {
-    text-align: center;
+  .main-header {
+    flex-direction: column;
+    z-index: 9999;
+  }
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
     width: 100%;
-    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .nav-list {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    margin-top: 100px;
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: rgb(92, 194, 114);
   }
 
-  /*Når du trykker på togglen så skal naven komme ned*/
   #toggle:checked + nav {
     display: block;
   }
@@ -211,7 +231,7 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 /**************************/
 /******MEDIA MOBIL SCREEN**/
 /**************************/
-@media only screen and (max-width: 680px) {
+@media only screen and (min-width: 500) and (max-width: 800px) {
   .videodel {
     width: 100%;
     padding: 86px;
@@ -222,8 +242,45 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
     height: 90%;
   }
   .video-text h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    z-index: 9999;
+  }
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: rgb(245, 203, 131);
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+
   .gallery-item {
     width: auto;
     max-width: 100%;
@@ -234,11 +291,10 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
     padding: 20px 20px;
   }
 }
-
 /*************************************/
 /******MEDIA MINDRE ENN MOBIL SCREEN**/
 /*************************************/
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 200) and (max-width: 420px) {
   .videodel {
     width: 100%;
     padding: 70px;
@@ -249,7 +305,7 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
   }
 
   .video-text h1 {
-    font-size: 1em;
+    font-size: 0.4em;
   }
   .video-text h2 {
     font-size: 20px;

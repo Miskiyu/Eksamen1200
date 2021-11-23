@@ -20,10 +20,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
-  height: 7rem;
+  height: 5rem;
   font-size: 1.2rem;
-  padding: 0 2.8rem;
+  line-height: 29px;
+  letter-spacing: 2px;
+  background-color: rgb(255, 190, 70);
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .nav-list {
   display: flex;
@@ -55,7 +61,7 @@ label {
   font-weight: 500;
 }
 .nav-link:active {
-  color: orange;
+  color: rgb(20, 19, 16);
 }
 
 /*************/
@@ -74,38 +80,47 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 27px;
+  letter-spacing: 1.2px;
 }
 
 h1 {
   font-size: 44px;
-  line-height: 1.1;
+  line-height: 66px;
   margin-bottom: 32px;
+  letter-spacing: 5px;
 }
 
 h2 {
   font-size: 36px;
   margin-bottom: 48px;
+  line-height: 54px;
+  letter-spacing: 4px;
 }
 
 .introduksjon-beskrivelse {
   font-size: 22px;
-  line-height: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: 2px;
 }
 
 .kolonne-tittel {
   margin-bottom: 16px;
   font-size: 20px;
   justify-content: center;
+  line-height: 30px;
 }
 
 .kolonne-tekst {
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 27px;
+  letter-spacing: 2px;
 }
 
 .andre-overskrift {
   font-size: 25px;
   margin-bottom: 0;
+  line-height: 36px;
+  letter-spacing: 3;
 }
 
 .footer-tekst {
@@ -129,7 +144,7 @@ h2 {
 
 .introduksjon {
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 10px;
+  margin-top: 75px;
   padding-left: 30px;
 }
 
@@ -141,6 +156,7 @@ h2 {
 .footer-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .section-tittel,
@@ -158,6 +174,7 @@ footer {
 
 img {
   max-width: 100%;
+  align-items: center;
 }
 
 /**SYMBOL**/
@@ -173,8 +190,6 @@ img {
 /******MEDIA-QUERY**/
 /**************************/
 
-/*****TABLETS*****/
-
 @media only screen and (max-width: 950px) {
   .introduksjon {
     grid-template-columns: 1fr;
@@ -185,43 +200,6 @@ img {
     font-size: 37px;
   }
 
-  /**FOR NAVEM**/
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  /**Satte naven til display none for å få det bort og satt flex direction til colum for
-for å ha dem som kolonne og ikke rader **/
-
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
-  header .main-header {
-    background-color: blue;
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    height: 500px;
-  }
-
-  nav {
-    flex-direction: column;
-    display: none;
-  }
-  .introduksjon {
-    margin-top: 300px;
-  }
-
-  /*Når du trykker på togglen så skal naven komme ned*/
-  #toggle:checked + nav {
-    display: block;
-  }
-  label {
-    flex-direction: column;
-  }
-  .nav-list {
-    flex-direction: column;
-  }
-
-  /*gjorde tre ting seksjonnene til 1 rad og 1 kolonne*/
   .tre-ting-kolonne {
     grid-template-columns: 1fr;
     padding: 0 9rem;
@@ -235,7 +213,7 @@ for å ha dem som kolonne og ikke rader **/
 
 /******MEDIA MOBIL SCREEN**/
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 500px) and (max-width: 800px) {
   .seksjon-introduksjon .tre-ting {
     padding: 2.4rem 0 6.4rem 0;
   }
@@ -251,26 +229,43 @@ for å ha dem som kolonne og ikke rader **/
   .logos img {
     height: 1.2rem;
   }
+  .seksjon-introduksjon {
+    margin-top: 135px;
+  }
+
   /**FOR NAVEM**/
   label {
     display: block;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
-  /**Satte naven til display none for å få det bort og satt flex direction til colum for
-for å ha dem som kolonne og ikke rader **/
-  nav {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  /**alle linkene i nav-listen satt jeg til displat block og lagde border for */
 
-  .nav-list a {
-    display: block;
-    border-bottom: 0.5px solid #eaeaeb;
-    margin: 0;
+  .main-header {
+    flex-direction: column;
+    z-index: 9999;
   }
-  /*Når du trykker på togglen så skal naven komme ned*/
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: rgb(245, 203, 131);
+  }
+
   #toggle:checked + nav {
     display: block;
   }
@@ -279,7 +274,6 @@ for å ha dem som kolonne og ikke rader **/
     padding: 0 15px 15px 15px;
   }
 
-  nav,
   .footer-container {
     flex-direction: column;
   }
