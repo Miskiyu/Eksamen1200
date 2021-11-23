@@ -133,7 +133,7 @@ h2 {
 
 .seksjon-introduksjon,
 .section-tittel {
-  padding: 4rem 0 7rem 0;
+  padding: 5rem 0 2rem 0;
 }
 
 .introduksjon,
@@ -169,7 +169,7 @@ footer {
 }
 
 .kolonne-overskrift {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 img {
@@ -180,8 +180,7 @@ img {
 /**SYMBOL**/
 
 .kolonne-icon {
-  stroke: #087f5b;
-  width: 32px;
+  width: 30px;
   height: 32px;
   padding-bottom: 10px;
 }
@@ -229,9 +228,6 @@ img {
   .logos img {
     height: 1.2rem;
   }
-  .seksjon-introduksjon {
-    margin-top: 135px;
-  }
 
   /**FOR NAVEM**/
   label {
@@ -272,6 +268,7 @@ img {
 
   .tre-ting-kolonne {
     padding: 0 15px 15px 15px;
+    align-items: center;
   }
 
   .footer-container {
