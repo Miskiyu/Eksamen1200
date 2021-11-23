@@ -102,28 +102,32 @@
       <div class="plassere-tekstboks">
         <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
         <p class="paragraf-tekst">
-          For å sjekek koden vår og valideren den brukte vi siden web
-          accessibility evalutaion tool
+          For å sjekke koden våres og validere den brukte vi nettstedet "web
+          accessibility evalutaion tool"
           <a href="https://wave.webaim.org/">(WAVE)</a>. Denne siden brukte vi
-          for å sjekke alle de fire sidene. De fire første sidene kom med
-          flere alerts og det var at vi hadde brukt redundant link i naven. Vi
-          hadde en link i logoen som var lik hjemme linken det resulterer til
+          for å sjekke alle sidene unntatt "kreativ". De fire sidene fikk
+          flere "alerts": Vi hadde brukt redundant link i naven.
+          Hadde en link i logoen som var lik hjemme linken - det resulterer
           i ytterligere navigering og repetisjon for tastatur- og
-          skjermleserbrukere. Så dette tok vi vekk. I tillegg hadde vi skrevet
-          feil tabindex på siden vår som resultete til at vi fikk allerts i
-          alle avsnitter og overksrifter. Dette var på grunn av at vi hadde
-          brukt tabindex 1 og 2 og det visste seg at dette vil bare føre til
-          forvirring om hva som er hva og ikke er interaktivt, spesielt hvis
-          man ikke kan se skjermen. Ellers så hadde ikke våre fire sider noen
-          andre errors, som dere kan se på bildet. Vi valgte også å legge til
-          kereative siden, den hadde som dere kan se på bildet flere errors.
-          Det første var at vi hadde en video og tekst over videoen og det var
+          skjermleserbrukere, noe som gjorde at vi fjernet disse detaljene. 
+          I tillegg hadde vi skrevet
+          feil tabindex på siden vår som resulterte i at vi fikk varsel i
+          alle avsnitt og overksrifter. Dette var på grunn av at vi hadde
+          brukt tabindex 1 og 2. Dette ledet til forvirring om hva som er hva 
+          og ikke er interaktivt, spesielt hvis
+          man ikke kan se skjermen. Ellers hadde ikke de fire sidene noen
+          andre varsler eller feil, som dere kan se på bildet. 
+          </p>
+          <p class="paragraf-tekst">
+          Vi valgte også å legge til
+          den kreative siden, og i likhet med de andre sidene hadde den også noen feil og mangler.
+          Det første var at vi hadde en video med tekst over seg, der det var
           lav konstrast mellom teksten og bildet. I tillegg fikk vi varsel på
-          videoen fordi hvis det er en video i siden så må lydinnhold
-          presenteres i et tekstformat for å være fullt tilgjengelig for
-          brukere som er døve og tunghørte. Men videoen vår har ikke noe lyd
-          så den er tilgjengelig for alle.
-        </p>
+          videoen. Dette fordi at når det legges til en video, så må lydinnhold
+          presenteres i et tekstformat for at det skal være fullt tilgjengelig for
+          brukere som er døve og tunghørte. Men videoen vår har ikke noe lyd i seg orginalt,
+          noe som gjør den tilgjengelig for alle.
+          </p>
       </div>
       <div class="bilde-en">
         <img class="section-overstebilde" src="images/tilgjengelighet/sjekkekode1_redigert_750w.PNG" srcset="
