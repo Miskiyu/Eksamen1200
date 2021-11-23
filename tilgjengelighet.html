@@ -1,206 +1,157 @@
 <!DOCTYPE html>
 <html lang="nn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <title>Tilgjengelighet</title>
-  </head>
 
-  <body>
-    <header class="main-header">
-      <img
-        class="logo"
-        alt="Bildet av logoen til OsloMet. Det står OsloMet i svart og hvit."
-        src="images/index/OsloMet_logo.png"
-      />
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <title>Tilgjengelighet</title>
+</head>
 
-      <nav>
-        <ul class="nav-list">
-          <li>
-            <a tabindex="0" class="nav-link" href="index.html" target="_blank"
-              >Hjem</a
-            >
-          </li>
-          <li>
-            <a
-              tabindex="0"
-              class="nav-link"
-              href="refleksjon.html"
-              target="_blank"
-              >Refleksjon</a
-            >
-          </li>
-          <li>
-            <a
-              tabindex="0"
-              class="nav-link"
-              href="tilgjengelighet.html"
-              target="_blank"
-              >Tilgjenelighet</a
-            >
-          </li>
-          <li>
-            <a
-              tabindex="0"
-              class="nav-link"
-              href="aktuellinformasjon.html"
-              target="_blank"
-              >Aktuelle informasjon</a
-            >
-          </li>
-          <li>
-            <a
-              tabindex="0"
-              class="nav-link"
-              href="kreativside.html"
-              target="_blank"
-              >Kreativ side</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="main-header">
+    <img class="logo" alt="Bildet av logoen til OsloMet. Det står OsloMet i svart og hvit."
+      src="images/index/OsloMet_logo.png" />
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
 
-    <div class="border-header-h1">
-      <h1>Tilgjenelighet</h1>
-      <div class="seksjon-tittel">
-        <blockquote
-          cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
-        >
-          Tilgjengelighet er praksisen med å gjøre nettsidene dine brukbare av
-          så mange mennesker som mulig.
-        </blockquote>
-      </div>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a tabindex="0" class="nav-link" href="index.html" target="_blank">Hjem</a>
+        </li>
+        <li>
+          <a tabindex="0" class="nav-link" href="refleksjon.html" target="_blank">Refleksjon</a>
+        </li>
+        <li>
+          <a tabindex="0" class="nav-link" href="tilgjengelighet.html" target="_blank">Tilgjenelighet</a>
+        </li>
+        <li>
+          <a tabindex="0" class="nav-link" href="aktuellinformasjon.html" target="_blank">Aktuelle informasjon</a>
+        </li>
+        <li>
+          <a tabindex="0" class="nav-link" href="kreativside.html" target="_blank">Kreativ side</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="border-header-h1">
+    <h1>Tilgjenelighet</h1>
+    <div class="seksjon-tittel">
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        Tilgjengelighet er praksisen med å gjøre nettsidene dine brukbare av
+        så mange mennesker som mulig.
+      </blockquote>
     </div>
-    <main>
-      <section class="section">
-        <div class="plassere-tekstboks">
-          <h2 class="andre-overskrift">
-            Hvordan vi gjorde kodevalg for universell utforming
-          </h2>
-          <p class="paragraf-tekst">
-            Før vi startet med å lage sidene, så var det noen kodevalg som vi
-            bestemte oss for. Vi skulle ha et godt organisert innhold som
-            hjelper brukere til å orientere seg og å navigere effektivt. Sidene
-            skulle har klare titler og er organisert ved hjelp av beskrivende
-            seksjonsoverskrifter hvor overskrifter og avsnitter er riktig
-            merket. I tillegg var det slik at vi skulle velge semantice tags som
-            dere kan se på bildet så langt det gikk, for at folk som bruker
-            skjermleser skulle få bedre opplevese. Dette er noe vi har
-            gjennomgående i alle sidene. Et annet valg vi gjorde var hvordan vi
-            stylet siden vår. Siden vår skulle være lesebar for alle. Vi valgte
-            en linjehøyde som var minst 1.5 ganger skriftstørrelsen,
-            bokstavavstand skulle 0.12 ganger skriftstørrelsen og ordavstand
-            skulle være minst 0.16 ganger skriftstørrelsen. I tillegg så valgte
-            vi enkle og fine farger slik at folk med fargeblindet også klarer å
-            lese sidene våre.
-          </p>
+  </div>
+  <main>
+    <section class="section">
+      <div class="plassere-tekstboks">
+        <h2 class="andre-overskrift">
+          Hvordan vi gjorde kodevalg for universell utforming
+        </h2>
+        <p class="paragraf-tekst">
+          Før vi startet med å lage sidene, så tok vi noen avgjørelser angående kodingen.
+          Vi skulle ha et godt organisert innhold som
+          hjelper brukere til å orientere seg og å navigere effektivt. Sidene
+          skulle ha klare titler og er organisert ved hjelp av beskrivende
+          seksjonsoverskrifter, hvor overskrifter og avsnitt er riktig
+          merket. I tillegg var det slik at vi skulle velge "semantic tags": 
+          Dere kan se på bildet så langt det gikk, for at folk som bruker
+          skjermleser skulle få bedre opplevese. Dette er noe vi har
+          gjennomgående i alle sidene. Et annet valg vi tok, var hvordan vi skulle
+          style siden vår. Den skulle være lesebar for alle. Vi valgte
+          en linjehøyde som var minst 1.5 ganger skriftstørrelsen,
+          bokstavavstand skulle være 0.12 ganger skriftstørrelsen og ordavstand
+          skulle være minst 0.16 ganger skriftstørrelsen. I tillegg så valgte
+          vi enkle og fine farger slik at folk som er fargeblinde også skulle klare å
+          lese sidene våre.
+        </p>
 
-          <p class="paragraf-tekst">
-            Brukere blir informert om deres nåværende plassering hvor brukeren
-            vet hvilken side og kan bevege seg i de forksjellige sidene.
-            Tastaturets fokus er synlig, vi la til også tabindex i overksrifter
-            og paragrafer slik at brukeren kan navigere med piltasten og tabben.
-            Vi har linker i naven så de som leser kan komme til andre sidene ved
-            å bare bruke tasteture. Vi la til også en navbar som er fixed, det
-            vil si den er det hele tiden er der også når folk blar nedover. Vi
-            synes det å ha navbaren slik er hensiktmessig siden da har folk hele
-            tiden tilgjengelig til navbare, som gjør siden vår mer tilgjengelig.
-          </p>
-        </div>
-        <div class="bilde-en">
-          <img
-            class="section-overstebilde"
-            src="images/tilgjengelighet/kodevalg1_redigert_750w..PNG"
-            srcset="
+        <p class="paragraf-tekst">
+          Brukere av nettsiden blir informert om deres nåværende plassering på siden. 
+          Dette gjennom flere detaljer, blant annet hvilken side de er på gjennom overskrift 
+          og "naven".Tastaturets fokus er synlig, vi la også til tabindex i overksrifter
+          og paragrafer slik at brukeren kan navigere med piltastene og tabben.
+          Vi har linker i naven så de som leser kan komme til andre sidene ved
+          å bare bruke tasteture. Vi la videre til en navbar som er fixed, det
+          vil si den er tilstede hele tiden, også når folk blar nedover. Vi
+          synes det å ha navbaren slik er hensiktmessig, det gjør navigasjonen 
+          rundt på nettstedet effektiv, og er med på å gjøre siden vår mer tilgjengelig.
+        </p>
+      </div>
+      <div class="bilde-en">
+        <img class="section-overstebilde" src="images/tilgjengelighet/kodevalg1_redigert_750w..PNG" srcset="
               images/tilgjengelighet/kodevalg1_redigert_500w.PNG   500w,
               images/tilgjengelighet/kodevalg1_redigert_750w..PNG  750w,
               images/tilgjengelighet/kodevalg1_redigert_1000w.PNG 1000w
-            "
-            sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
-            alt="Bildet av html kode hvor en kode av header og nav står"
-          />
-          <img
-            class="section-overstebilde"
-            src="images/tilgjengelighet/kodevalg2_redigert_750w.PNG"
-            srcset="
+            " sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
+          alt="Bildet av html kode hvor en kode av header og nav står" />
+        <img class="section-overstebilde" src="images/tilgjengelighet/kodevalg2_redigert_750w.PNG" srcset="
               images/tilgjengelighet/kodevalg2_redigert_500w.PNG   500w,
               images/tilgjengelighet/kodevalg2_redigert_750w.PNG   750w,
               images/tilgjengelighet/kodevalg2_redigert_1000w.PNG 1000w
-            "
-            sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
-            alt="bildet av en CSS hvor det står en kode der h1,h2 og nav-link blir stylet"
-          />
-        </div>
-      </section>
+            " sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
+          alt="bildet av en CSS hvor det står en kode der h1,h2 og nav-link blir stylet" />
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="plassere-tekstboks">
-          <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
-          <p class="paragraf-tekst">
-            For å sjekek koden vår og valideren den brukte vi siden web
-            accessibility evalutaion tool
-            <a href="https://wave.webaim.org/">(WAVE)</a>. Denne siden brukte vi
-            for å sjekke alle de fire sidene. De fire første sidene kom med
-            flere alerts og det var at vi hadde brukt redundant link i naven. Vi
-            hadde en link i logoen som var lik hjemme linken det resulterer til
-            i ytterligere navigering og repetisjon for tastatur- og
-            skjermleserbrukere. Så dette tok vi vekk. I tillegg hadde vi skrevet
-            feil tabindex på siden vår som resultete til at vi fikk allerts i
-            alle avsnitter og overksrifter. Dette var på grunn av at vi hadde
-            brukt tabindex 1 og 2 og det visste seg at dette vil bare føre til
-            forvirring om hva som er hva og ikke er interaktivt, spesielt hvis
-            man ikke kan se skjermen. Ellers så hadde ikke våre fire sider noen
-            andre errors, som dere kan se på bildet. Vi valgte også å legge til
-            kereative siden, den hadde som dere kan se på bildet flere errors.
-            Det første var at vi hadde en video og tekst over videoen og det var
-            lav konstrast mellom teksten og bildet. I tillegg fikk vi varsel på
-            videoen fordi hvis det er en video i siden så må lydinnhold
-            presenteres i et tekstformat for å være fullt tilgjengelig for
-            brukere som er døve og tunghørte. Men videoen vår har ikke noe lyd
-            så den er tilgjengelig for alle.
-          </p>
-        </div>
-        <div class="bilde-en">
-          <img
-            class="section-overstebilde"
-            src="images/tilgjengelighet/sjekkekode1_redigert_750w.PNG"
-            srcset="
+    <section class="section">
+      <div class="plassere-tekstboks">
+        <h2 class="andre-overskrift">Hvordan vi testet koden vår</h2>
+        <p class="paragraf-tekst">
+          For å sjekek koden vår og valideren den brukte vi siden web
+          accessibility evalutaion tool
+          <a href="https://wave.webaim.org/">(WAVE)</a>. Denne siden brukte vi
+          for å sjekke alle de fire sidene. De fire første sidene kom med
+          flere alerts og det var at vi hadde brukt redundant link i naven. Vi
+          hadde en link i logoen som var lik hjemme linken det resulterer til
+          i ytterligere navigering og repetisjon for tastatur- og
+          skjermleserbrukere. Så dette tok vi vekk. I tillegg hadde vi skrevet
+          feil tabindex på siden vår som resultete til at vi fikk allerts i
+          alle avsnitter og overksrifter. Dette var på grunn av at vi hadde
+          brukt tabindex 1 og 2 og det visste seg at dette vil bare føre til
+          forvirring om hva som er hva og ikke er interaktivt, spesielt hvis
+          man ikke kan se skjermen. Ellers så hadde ikke våre fire sider noen
+          andre errors, som dere kan se på bildet. Vi valgte også å legge til
+          kereative siden, den hadde som dere kan se på bildet flere errors.
+          Det første var at vi hadde en video og tekst over videoen og det var
+          lav konstrast mellom teksten og bildet. I tillegg fikk vi varsel på
+          videoen fordi hvis det er en video i siden så må lydinnhold
+          presenteres i et tekstformat for å være fullt tilgjengelig for
+          brukere som er døve og tunghørte. Men videoen vår har ikke noe lyd
+          så den er tilgjengelig for alle.
+        </p>
+      </div>
+      <div class="bilde-en">
+        <img class="section-overstebilde" src="images/tilgjengelighet/sjekkekode1_redigert_750w.PNG" srcset="
               images/tilgjengelighet/sjekkekode1_redigert_500w.PNG  500w,
               images/tilgjengelighet/sjekkekode1_redigert_750w.PNG  750w,
               images/tilgjengelighet/sjekkekode1_uredigert.PNG     1000w
-            "
-            sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
-            alt="Bildet av siden den tre første sidene etter validation. "
-          />
-          <img
-            class="section-overstebilde"
-            src="images/tilgjengelighet/sjekkekode2_uredigert_750w.PNG"
-            srcset="
+            " sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
+          alt="Bildet av siden den tre første sidene etter validation. " />
+        <img class="section-overstebilde" src="images/tilgjengelighet/sjekkekode2_uredigert_750w.PNG" srcset="
               images/tilgjengelighet/sjekkekode2_redigert_500w.PNG   500w,
               images/tilgjengelighet/sjekkekode2_uredigert_750w.PNG  750w,
               images/tilgjengelighet/sjekkekode2_uredigert.PNG      1000w
-            "
-            sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
-            alt="Bildet av kerativ siden vår etter i validation siden"
-          />
-        </div>
-      </section>
-    </main>
-    <!--    Footer Start    -->
-    <footer>
-      <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2>
-      <div class="footer-container">
-        <p class="paragraf-tekst">kandidat:211</p>
-        <p class="paragraf-tekst">kandidat:480</p>
-        <p class="paragraf-tekst">kandidat:354</p>
-        <p class="paragraf-tekst"></p>
+            " sizes="(max-width: 950px) 100vw, (max-width: 576px) 100vw, 50vw"
+          alt="Bildet av kerativ siden vår etter i validation siden" />
       </div>
-    </footer>
-    <!--    Footer Slutt   -->
-  </body>
+    </section>
+  </main>
+  <!--    Footer Start    -->
+  <footer>
+    <h2 class="andre-overskrift">Denne nettsiden er laget av:</h2>
+    <div class="footer-container">
+      <p class="paragraf-tekst">Kandidat:211</p>
+      <p class="paragraf-tekst">Kandidat:480</p>
+      <p class="paragraf-tekst">Kandidat:354</p>
+      <p class="paragraf-tekst"></p>
+    </div>
+  </footer>
+  <!--    Footer Slutt   -->
+</body>
+
 </html>
