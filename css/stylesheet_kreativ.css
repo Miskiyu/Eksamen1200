@@ -129,7 +129,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   opacity: 0.8;
 }
@@ -166,7 +166,7 @@ video {
   grid-template-columns: 50% 50%;
   padding: 2rem 4rem 7rem 4rem;
 }
-/*høyde: 100vh betyr innstilt 100 prosent av 
+/*høyde: 50vh betyr innstilt 50 prosent av 
 visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 .gallery img {
   width: 100%;
@@ -222,12 +222,12 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 
   video {
     width: 100%;
-    height: 85%;
+    height: 60%;
   }
   .videodel {
     min-height: 55vh;
     width: 100%;
-    padding: 80px;
+    padding: 95px;
   }
 }
 
@@ -284,12 +284,6 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
     display: block;
   }
 
-  .gallery-item {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-  }
-
   .kart-responsive {
     padding: 20px 20px;
   }
@@ -297,24 +291,25 @@ visningshøyden i forhold til enhetens høyde. som er de tre bildene vi har*/
 /*************************************/
 /******MEDIA MINDRE ENN MOBIL SCREEN**/
 /*************************************/
-@media only screen and (min-width: 200) and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .videodel {
     width: 100%;
-    padding: 70px;
+    padding: 40px;
+    margin-top: 40px;
   }
   video {
     width: 100%;
-    height: 70%;
+    height: 60%;
   }
 
   .video-text h1 {
-    font-size: 0.4em;
+    font-size: 2em;
   }
   .video-text h2 {
     font-size: 20px;
   }
   .video-text p {
-    font-size: 10px;
+    font-size: 15px;
   }
   .info-overskrift {
     font-size: 25px;

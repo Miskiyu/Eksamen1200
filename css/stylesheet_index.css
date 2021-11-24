@@ -24,7 +24,7 @@ body {
   font-size: 1.2rem;
   line-height: 29px;
   letter-spacing: 2px;
-  background-color: rgb(255, 190, 70);
+  background-color: #f1d4bc;
   padding: 0 40px;
   position: fixed;
   top: 0;
@@ -176,6 +176,11 @@ img {
   max-width: 100%;
   align-items: center;
 }
+.introduksjon-bildet {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
 
 /**SYMBOL**/
 
@@ -259,7 +264,7 @@ img {
   nav {
     display: none;
     width: 150%;
-    background-color: rgb(245, 203, 131);
+    background-color: #f1d4bc;
   }
 
   #toggle:checked + nav {

@@ -25,7 +25,7 @@ body {
   font-size: 1.2rem;
   line-height: 29px;
   letter-spacing: 2px;
-  background-color: rgb(255, 190, 70);
+  background-color: #f1d4bc;
   padding: 0 40px;
   position: fixed;
   top: 0;
@@ -81,7 +81,7 @@ h2 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 58px;
   line-height: 72px;
   letter-spacing: 5px;
   padding-bottom: 5px;
@@ -113,7 +113,11 @@ blockquote {
 /* Layout*/
 /************/
 
-.border-header-h1,
+.border-header-h1 {
+  background-color: #fdf2e9;
+  border-bottom: solid;
+}
+
 .section,
 footer {
   border-style: solid;
@@ -121,6 +125,7 @@ footer {
 }
 .border-header-h1 {
   margin-top: 80px;
+  padding-top: 30px;
 }
 .section,
 footer {
@@ -197,8 +202,7 @@ footer {
   }
   .header-logo {
     width: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px 0 0 10px;
   }
   .nav-list {
     text-align: center;
@@ -206,7 +210,7 @@ footer {
   nav {
     display: none;
     width: 150%;
-    background-color: rgb(247, 206, 94);
+    background-color: #f1d4bc;
   }
 
   #toggle:checked + nav {
@@ -215,7 +219,7 @@ footer {
 
   h1 {
     padding-top: 6px;
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   .footer-container {
@@ -232,5 +236,61 @@ footer {
   .bilde-en img {
     width: 70%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  /**FOR NAVEM**/
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    z-index: 9999;
+  }
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
+    width: 100%;
+    margin: 10px 0 0 10px;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: #f1d4bc;
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .paragraf-tekst {
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .plassere-tekstboks,
+  .plassere-bilde {
+    width: 100%;
   }
 }
