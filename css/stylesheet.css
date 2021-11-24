@@ -292,4 +292,12 @@ footer {
   .plassere-bilde {
     width: 100%;
   }
+  .bilde-en {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bilde-en img {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
