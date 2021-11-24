@@ -275,7 +275,62 @@ img {
     padding: 0 15px 15px 15px;
     align-items: center;
   }
+}
+@media only screen and (max-width: 490px) {
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 
+  .main-header {
+    flex-direction: column;
+  }
+  li,
+  .nav-list {
+    display: block;
+    padding: 10px;
+    border-top: 0.5px solid white;
+  }
+  .header-logo {
+    width: 100%;
+    margin: 10px 0 0 10px;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 150%;
+    background-color: #f1d4bc;
+  }
+
+  #toggle:checked + nav {
+    display: block;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .paragraf-tekst {
+    font-size: 20px;
+  }
+
+  .plassere-tekstboks,
+  .plassere-bilde {
+    width: 100%;
+    padding: 0%;
+  }
+  .introduksjon,
+  .tre-ting-kolonne {
+    width: 100%;
+    margin: 0;
+    padding: 0px 30px 0px 30px;
+  }
   .footer-container {
     flex-direction: column;
   }
