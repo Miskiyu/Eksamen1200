@@ -181,7 +181,7 @@ footer {
   .plassere-bilde {
     width: 100%;
   }
-  /**FOR NAVEM**/
+  /**FOR NAVEN**/
   label {
     display: block;
     cursor: pointer;
@@ -202,8 +202,9 @@ footer {
   }
   .header-logo {
     width: 100%;
-    margin: 10px 0 0 10px;
+    margin: 10px 50px 0 10px;
   }
+
   .nav-list {
     text-align: center;
   }
@@ -240,7 +241,6 @@ footer {
 }
 
 @media only screen and (max-width: 490px) {
-  /**FOR NAVEM**/
   label {
     display: block;
     cursor: pointer;
@@ -259,10 +259,12 @@ footer {
     padding: 10px;
     border-top: 0.5px solid white;
   }
+
   .header-logo {
     width: 100%;
-    margin: 10px 0 0 10px;
+    margin: 10px 50px 0 10px;
   }
+
   .nav-list {
     text-align: center;
   }
@@ -276,14 +278,14 @@ footer {
     display: block;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   h2 {
     font-size: 1rem;
   }
   .paragraf-tekst {
-    font-size: 20px;
-    padding-right: 0 20px 0 20px;
+    font-size: 17px;
+    padding: 0 10px 0 10px;
   }
   .footer-container {
     flex-direction: column;
